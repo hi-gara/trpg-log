@@ -1,11 +1,1108 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import sessions from "../data/sessions.json";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+/* 日付が新しい順に並べる */
+const sortedSessions = [...sessions].sort(
+	(a, b) =>
+		new Date(b.date).getTime() -
+		new Date(a.date).getTime()
+);
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<!doctype html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+
+		<title>TRPG SESSION LOG</title>
+
+		<meta
+			name="description"
+			content="TRPGで遊んだ卓の記録をまとめています。"
+	/>
+	</head>
+
+	<body>
+
+		<main>
+
+			<!-- =========================
+			     ヘッダー
+			========================= -->
+
+			<header class="page-header">
+
+				<p class="eyebrow">
+					SESSION ARCHIVE
+				</p>
+
+				<h1>
+					TRPG SESSION LOG
+				</h1>
+
+				<p class="description">
+					TRPGで遊んだ卓の記録をまとめています。
+				</p>
+
+			</header>
+
+
+			<!-- =========================
+			     卓一覧
+			========================= -->
+
+			<div class="filters">
+				<button class="filter-button is-active" type="button" data-filter="ALL">
+					ALL
+				</button>
+
+				<button class="filter-button" type="button" data-filter="PL">
+					PL
+				</button>
+
+				<button class="filter-button" type="button" data-filter="KP">
+					KP
+				</button>
+			</div>
+
+			<section class="session-grid">
+
+				{
+					sortedSessions.map((session) => (
+
+						<button
+							class="session-card"
+							type="button"
+							data-session={JSON.stringify(session)}
+							data-category={session.category}
+						>
+
+							<div class="image-wrap">
+
+								<img
+									src={session.image}
+									alt={`${session.title}の卓報告`}
+									class="session-image"
+									draggable="false"
+									oncontextmenu="return false;"
+								/>
+
+							</div>
+
+
+							<div class="session-info">
+
+								<h2>
+									{session.title}
+								</h2>
+
+								<time datetime={session.date}>
+									{
+										new Date(
+											session.date
+										).toLocaleDateString(
+											"ja-JP"
+										)
+									}
+								</time>
+
+							</div>
+
+						</button>
+
+					))
+				}
+
+			</section>
+
+		</main>
+
+
+		<!-- =========================
+		     詳細モーダル
+		========================= -->
+
+		<div
+			class="modal"
+			id="session-modal"
+			aria-hidden="true"
+		>
+
+			<!-- 黒い背景 -->
+			<div
+				class="modal-backdrop"
+				data-close-modal
+			></div>
+
+
+			<div
+				class="modal-content"
+				role="dialog"
+				aria-modal="true"
+				aria-labelledby="modal-title"
+			>
+
+				<!-- 閉じるボタン -->
+				<button
+					class="modal-close"
+					type="button"
+					data-close-modal
+					aria-label="閉じる"
+				>
+					×
+				</button>
+
+
+				<!-- 大きい卓画像 -->
+
+				<div class="modal-image-area">
+
+					<img
+						id="modal-image"
+						class="modal-image"
+						alt=""
+						draggable="false"
+					/>
+
+				</div>
+
+
+				<!-- 卓詳細 -->
+
+				<div class="modal-details">
+
+					<h2 id="modal-title"></h2>
+
+					<p
+						id="modal-date"
+						class="modal-date"
+					></p>
+
+
+					<dl>
+
+						<div class="detail-row">
+							<dt>System</dt>
+							<dd id="modal-system"></dd>
+						</div>
+
+
+						<div class="detail-row">
+							<dt>Writer</dt>
+							<dd id="modal-writer"></dd>
+						</div>
+
+
+						<div class="detail-row">
+						<dt>KP / KPC</dt>
+						<dd id="modal-kpkpc"></dd>
+						</div>
+
+
+						<div class="detail-row">
+							<dt>PC / PL</dt>
+							<dd id="modal-pc"></dd>
+						</div>
+
+
+						<div class="detail-row">
+							<dt>Result</dt>
+							<dd id="modal-result"></dd>
+						</div>
+
+					</dl>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<!-- =========================
+		     JavaScript
+		========================= -->
+
+		<script>
+
+			const modal =
+				document.querySelector("#session-modal");
+
+			const modalImage =
+				document.querySelector("#modal-image");
+
+			const modalTitle =
+				document.querySelector("#modal-title");
+
+			const modalDate =
+				document.querySelector("#modal-date");
+
+			const modalSystem =
+				document.querySelector("#modal-system");
+
+			const modalWriter =
+				document.querySelector("#modal-writer");
+
+			const modalKpKpc =
+				document.querySelector("#modal-kpkpc");
+
+			const modalPc =
+				document.querySelector("#modal-pc");
+
+			const modalResult =
+				document.querySelector("#modal-result");
+
+
+			/* -------------------------
+			   モーダルを開く
+			------------------------- */
+
+			document
+				.querySelectorAll(".session-card")
+				.forEach((card) => {
+
+					card.addEventListener(
+						"click",
+						() => {
+
+							const session =
+								JSON.parse(
+									card.dataset.session
+								);
+
+
+							modalImage.src =
+								session.image;
+
+							modalImage.alt =
+								`${session.title}の卓報告`;
+
+
+							modalTitle.textContent =
+								session.title;
+
+
+							modalDate.textContent =
+								new Date(
+									session.date
+								).toLocaleDateString(
+									"ja-JP"
+								);
+
+
+							modalSystem.textContent =
+								session.system || "—";
+
+							modalWriter.textContent =
+								session.writer || "—";
+
+							const kpKpcLines = [];
+
+							if (session.kp) {
+								kpKpcLines.push(`KP：${session.kp}`);
+							}
+
+							if (session.kpc) {
+								kpKpcLines.push(`KPC：${session.kpc}`);
+							}
+
+							modalKpKpc.textContent =
+								kpKpcLines.length > 0
+									? kpKpcLines.join("\n")
+									: "—";
+
+							modalPc.textContent =
+								session.pc || "—";
+
+							modalResult.textContent =
+								session.result || "—";
+
+
+							modal.classList.add(
+								"is-open"
+							);
+
+							modal.setAttribute(
+								"aria-hidden",
+								"false"
+							);
+
+							document.body.style.overflow =
+								"hidden";
+
+						}
+					);
+
+				});
+
+
+			/* -------------------------
+			   モーダルを閉じる
+			------------------------- */
+
+			function closeModal() {
+
+				modal.classList.remove(
+					"is-open"
+				);
+
+				modal.setAttribute(
+					"aria-hidden",
+					"true"
+				);
+
+				document.body.style.overflow =
+					"";
+
+			}
+
+
+			document
+				.querySelectorAll(
+					"[data-close-modal]"
+				)
+				.forEach((button) => {
+
+					button.addEventListener(
+						"click",
+						closeModal
+					);
+
+				});
+
+
+			/* Escキーでも閉じる */
+
+			document.addEventListener(
+				"keydown",
+				(event) => {
+
+					if (
+						event.key === "Escape" &&
+						modal.classList.contains(
+							"is-open"
+						)
+					) {
+
+						closeModal();
+
+					}
+
+				}
+			);
+
+
+			/* 卓画像の右クリックを無効化 */
+
+			document.addEventListener(
+				"contextmenu",
+				(event) => {
+
+					if (
+						event.target.classList.contains(
+							"session-image"
+						) ||
+						event.target.classList.contains(
+							"modal-image"
+						)
+					) {
+
+						event.preventDefault();
+
+					}
+
+				}
+			);
+
+			/* -------------------------
+			PL / KP フィルター
+			------------------------- */
+
+			const filterButtons =
+				document.querySelectorAll(".filter-button");
+
+			const sessionCards =
+				document.querySelectorAll(".session-card");
+
+			filterButtons.forEach((button) => {
+				button.addEventListener("click", () => {
+					const filter =
+						button.dataset.filter;
+
+					filterButtons.forEach((item) => {
+						item.classList.remove("is-active");
+					});
+
+					button.classList.add("is-active");
+
+					sessionCards.forEach((card) => {
+						const category =
+							card.dataset.category;
+
+						if (
+							filter === "ALL" ||
+							category === filter
+						) {
+							card.hidden = false;
+						} else {
+							card.hidden = true;
+						}
+					});
+				});
+			});
+
+		</script>
+
+	</body>
+</html>
+
+
+<style>
+
+	/* =========================
+	   基本設定
+	========================= */
+
+	:global(*) {
+		box-sizing: border-box;
+	}
+
+
+	:global(html) {
+
+		background: #1f2023;
+
+		color: #eeeeee;
+
+		font-family:
+			"Yu Gothic UI",
+			"Yu Gothic",
+			"Meiryo",
+			sans-serif;
+
+	}
+
+
+	:global(body) {
+
+		margin: 0;
+
+		min-width: 320px;
+
+		background: #1f2023;
+
+	}
+
+
+	:global(button) {
+		font-family: inherit;
+	}
+
+
+	/* =========================
+	   メイン
+	========================= */
+
+	main {
+
+		width: min(
+			100% - 40px,
+			1120px
+		);
+
+		margin: 0 auto;
+
+		padding:
+			80px 0
+			120px;
+
+	}
+
+
+	/* =========================
+	   ヘッダー
+	========================= */
+
+	.page-header {
+		margin-bottom: 56px;
+	}
+
+
+	.eyebrow {
+
+		margin:
+			0 0
+			10px;
+
+		color: #92969e;
+
+		font-size: 11px;
+
+		font-weight: 700;
+
+		letter-spacing: 0.2em;
+
+	}
+
+
+	h1 {
+
+		margin: 0;
+
+		font-size:
+			clamp(
+				34px,
+				6vw,
+				58px
+			);
+
+		letter-spacing: 0.03em;
+
+	}
+
+
+	.description {
+
+		margin-top: 18px;
+
+		color: #aeb1b7;
+
+		font-size: 14px;
+
+		line-height: 1.8;
+
+	}
+
+	.filters {
+	display: flex;
+	gap: 8px;
+	margin-bottom: 32px;
+}
+
+.filter-button {
+	padding: 8px 18px;
+	border: 1px solid #45474d;
+	background: transparent;
+	color: #92969e;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	cursor: pointer;
+	transition:
+		background-color 0.2s ease,
+		color 0.2s ease,
+		border-color 0.2s ease;
+}
+
+.filter-button:hover {
+	border-color: #747880;
+	color: #eeeeee;
+}
+
+.filter-button.is-active {
+	border-color: #eeeeee;
+	background: #eeeeee;
+	color: #1f2023;
+}
+
+.session-card[hidden] {
+	display: none;
+}
+
+
+	/* =========================
+	   卓一覧
+	========================= */
+
+	.session-grid {
+
+		display: grid;
+
+		grid-template-columns:
+			repeat(
+				3,
+				minmax(0, 1fr)
+			);
+
+		gap:
+			36px
+			20px;
+
+	}
+
+
+	.session-card {
+
+		display: block;
+
+		min-width: 0;
+
+		padding: 0;
+
+		border: 0;
+
+		background: transparent;
+
+		color: inherit;
+
+		text-align: left;
+
+		cursor: pointer;
+
+	}
+
+
+	.image-wrap {
+
+		overflow: hidden;
+
+		aspect-ratio: 4 / 3;
+
+		background: #2a2b2f;
+
+	}
+
+
+	.session-image {
+
+		display: block;
+
+		width: 100%;
+
+		height: 100%;
+
+		object-fit: cover;
+
+		user-select: none;
+
+		-webkit-user-drag: none;
+
+		pointer-events: none;
+
+		transition:
+			transform 0.25s ease,
+			opacity 0.25s ease;
+
+	}
+
+
+	.session-card:hover
+	.session-image {
+
+		transform:
+			scale(1.025);
+
+		opacity: 0.88;
+
+	}
+
+
+	.session-info {
+		padding-top: 14px;
+	}
+
+
+	.session-info h2 {
+
+		margin:
+			0 0
+			7px;
+
+		font-size: 17px;
+
+		font-weight: 600;
+
+		line-height: 1.5;
+
+	}
+
+
+	.session-info time {
+
+		color: #7f838a;
+
+		font-size: 12px;
+
+	}
+
+
+	/* =========================
+	   モーダル
+	========================= */
+
+	.modal {
+
+		position: fixed;
+
+		inset: 0;
+
+		z-index: 1000;
+
+		display: none;
+
+		align-items: center;
+
+		justify-content: center;
+
+		padding: 30px;
+
+	}
+
+
+	.modal.is-open {
+		display: flex;
+	}
+
+
+	.modal-backdrop {
+
+		position: absolute;
+
+		inset: 0;
+
+		background:
+			rgb(
+				0 0 0 / 82%
+			);
+
+		backdrop-filter:
+			blur(3px);
+
+	}
+
+
+	.modal-content {
+
+		position: relative;
+
+		z-index: 1;
+
+		display: grid;
+
+		grid-template-columns:
+			minmax(0, 1.5fr)
+			minmax(260px, 0.7fr);
+
+		gap: 36px;
+
+		width:
+			min(
+				1100px,
+				100%
+			);
+
+		max-height: 90vh;
+
+		overflow-y: auto;
+
+		padding: 30px;
+
+		background: #27282c;
+
+		box-shadow:
+			0 18px 60px
+			rgb(
+				0 0 0 / 40%
+			);
+
+	}
+
+
+	/* =========================
+	   モーダル画像
+	========================= */
+
+	.modal-image-area {
+
+		display: flex;
+
+		align-items: center;
+
+		justify-content: center;
+
+		min-width: 0;
+
+	}
+
+
+	.modal-image {
+
+		display: block;
+
+		width: 100%;
+
+		max-height: 80vh;
+
+		object-fit: contain;
+
+		user-select: none;
+
+		-webkit-user-drag: none;
+
+	}
+
+
+	/* =========================
+	   モーダル詳細
+	========================= */
+
+	.modal-details {
+
+		min-width: 0;
+
+		padding-top: 10px;
+
+	}
+
+
+	.modal-details h2 {
+
+		margin:
+			0 40px
+			8px 0;
+
+		font-size: 26px;
+
+		line-height: 1.5;
+
+	}
+
+
+	.modal-date {
+
+		margin: 0;
+
+		color: #888c93;
+
+		font-size: 12px;
+
+	}
+
+
+	.modal-details dl {
+		margin-top: 32px;
+	}
+
+
+	.detail-row {
+
+		padding:
+			0 0
+			18px;
+
+		margin-bottom: 18px;
+
+		border-bottom:
+			1px solid
+			#3b3c41;
+
+	}
+
+
+	.detail-row dt {
+
+		margin-bottom: 6px;
+
+		color: #858991;
+
+		font-size: 10px;
+
+		font-weight: 700;
+
+		letter-spacing: 0.15em;
+
+		text-transform: uppercase;
+
+	}
+
+
+	.detail-row dd {
+
+		margin: 0;
+
+		font-size: 14px;
+
+		line-height: 1.8;
+
+		white-space: pre-wrap;
+
+	}
+
+
+	/* =========================
+	   閉じるボタン
+	========================= */
+
+	.modal-close {
+
+		position: absolute;
+
+		top: 12px;
+
+		right: 16px;
+
+		z-index: 2;
+
+		padding: 4px 8px;
+
+		border: 0;
+
+		background: transparent;
+
+		color: #eeeeee;
+
+		font-size: 32px;
+
+		font-weight: 300;
+
+		line-height: 1;
+
+		cursor: pointer;
+
+	}
+
+
+	.modal-close:hover {
+		opacity: 0.6;
+	}
+
+
+	/* =========================
+	   タブレット
+	========================= */
+
+	@media (max-width: 800px) {
+
+		.session-grid {
+
+			grid-template-columns:
+				repeat(
+					2,
+					minmax(0, 1fr)
+				);
+
+		}
+
+
+		.modal-content {
+
+			grid-template-columns:
+				1fr;
+
+			gap: 24px;
+
+		}
+
+
+		.modal-image {
+			max-height: 60vh;
+		}
+
+	}
+
+
+	/* =========================
+	   スマホ
+	========================= */
+
+	@media (max-width: 520px) {
+
+		main {
+
+			width:
+				min(
+					100% - 28px,
+					1120px
+				);
+
+			padding:
+				48px 0
+				80px;
+
+		}
+
+
+		.page-header {
+			margin-bottom: 36px;
+		}
+
+
+		.session-grid {
+
+			grid-template-columns:
+				repeat(
+					2,
+					minmax(0, 1fr)
+				);
+
+			gap:
+				26px
+				12px;
+
+		}
+
+
+		.session-info {
+			padding-top: 10px;
+		}
+
+
+		.session-info h2 {
+
+			margin-bottom: 5px;
+
+			font-size: 14px;
+
+		}
+
+
+		.modal {
+
+			padding: 10px;
+
+			align-items: flex-start;
+
+		}
+
+
+		.modal-content {
+
+			gap: 20px;
+
+			width: 100%;
+
+			max-height:
+				calc(
+					100vh - 20px
+				);
+
+			padding:
+				48px
+				18px
+				24px;
+
+		}
+
+
+		.modal-image {
+			max-height: 55vh;
+		}
+
+
+		.modal-details {
+			padding-top: 0;
+		}
+
+
+		.modal-details h2 {
+
+			margin-right: 0;
+
+			font-size: 21px;
+
+		}
+
+	}
+
+</style>
