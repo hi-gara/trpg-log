@@ -13,19 +13,6 @@
     "image": ""
   },
   {
-    "id": "009",
-    "title": "同居人",
-    "date": "2021-11-07",
-    "category": "PL",
-    "system": "Call of Cthulhu",
-    "writer": "超高音",
-    "kp": "KL",
-    "kpc": "",
-    "pc": "鴈金 蒼 / 日雀\n十霞 附 / C-hicken",
-    "result": "両生還",
-    "image": ""
-  },
-  {
     "id": "008",
     "title": "豪華客船と怪盗団",
     "date": "2021-10-29",
@@ -128,5 +115,18 @@
     "pc": "ザイン・ヘルシャフト / K鮭\nザファー・ミトコフ / 日雀\nピン・フーアン / かいの\nセシル・タレント / 精肉組合",
     "result": "全生還",
     "image": "/trpg-log/images/001.png"
+  },
+  {
+    "id": "009",
+    "title": "同居人",
+    "date": "",
+    "category": "PL",
+    "system": "Call of Cthulhu",
+    "writer": "超高音",
+    "kp": "KL",
+    "kpc": "",
+    "pc": "鴈金 蒼 / 日雀\n十霞 附 / C-hicken",
+    "result": "両生還",
+    "image": ""
   }
 ]
