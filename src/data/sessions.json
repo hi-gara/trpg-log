@@ -1,6 +1,6 @@
 [
   {
-    "id": "055",
+    "id": "054",
     "title": "救いに非ず",
     "date": "2026-04-15",
     "category": "KP",
@@ -10,10 +10,10 @@
     "kpc": "",
     "pc": "太平洋 宇一 / 海星\n鴲凪 真琴 / 日雀",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/054.png"
   },
   {
-    "id": "000",
+    "id": "059",
     "title": "ラディッシュを下から見てみる",
     "date": "2026-04-11",
     "category": "KP",
@@ -23,10 +23,10 @@
     "kpc": "",
     "pc": "Issam / 海星\nパラディス / 日雀",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/059.png"
   },
   {
-    "id": "058",
+    "id": "057",
     "title": "傀逅",
     "date": "2026-03-23",
     "category": "PL",
@@ -36,10 +36,10 @@
     "kpc": "",
     "pc": "傀逅（捲土重来） / 捲土重来\n傀逅（日雀） / 日雀",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/057.png"
   },
   {
-    "id": "059",
+    "id": "058",
     "title": "十二星座館殺人事件",
     "date": "2026-03-19",
     "category": "KP",
@@ -49,10 +49,10 @@
     "kpc": "",
     "pc": "",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/058.png"
   },
   {
-    "id": "057",
+    "id": "056",
     "title": "壊胎",
     "date": "2026-01-09",
     "category": "PL",
@@ -62,10 +62,10 @@
     "kpc": "",
     "pc": "壊胎PC（捲土重来） / 捲土重来\n壊胎PC（日雀） / 日雀",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/056.png"
   },
   {
-    "id": "056",
+    "id": "055",
     "title": "しんでなんかないよ",
     "date": "2025-11-14",
     "category": "PL",
@@ -75,7 +75,7 @@
     "kpc": "",
     "pc": "角屋敷 鴟沓 / 日雀\n浦賀 富嶽 / 海星",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/055.png"
   },
   {
     "id": "046",
@@ -88,7 +88,7 @@
     "kpc": "",
     "pc": "角屋敷 鴟沓 / 日雀\n浦賀 富嶽 / 海星",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/046.png"
   },
   {
     "id": "016",
@@ -100,8 +100,8 @@
     "kp": "日雀",
     "kpc": "",
     "pc": "日高 孝 / 新高\n無悪 燐 / 葦原葦簀\n和田 かいそ / 海星",
-    "result": "片ロス",
-    "image": ""
+    "result": "全生還",
+    "image": "/trpg-log/images/016.png"
   },
   {
     "id": "050",
@@ -114,7 +114,7 @@
     "kpc": "",
     "pc": "孳代 遊\n宝紐 聖\n寅川 雀\n敗卯 葬\n震 霞\nフシミ イオリ\n午頭 賢太郎\n未海 航星\n呻畠 岬\nSHU\n滅 晴\n備核 仁玲",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/050.png"
   },
   {
     "id": "053",
@@ -127,7 +127,7 @@
     "kpc": "",
     "pc": "孳代 遊 / 優斗\n宝紐 聖 / 灘\n寅川 雀 / 日雀\n敗卯 葬 / バルト海洋葬\n震 霞 / ЯOTƧAƆ\n午頭 賢太郎 / ヲタリア食堂\n未海 航星 / 海星\n呻畠 岬 / 葦原葦簀\n備核 仁玲 / 新高",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/053.png"
   },
   {
     "id": "052",
@@ -136,11 +136,11 @@
     "category": "PL",
     "system": "Call of Cthulhu",
     "writer": "",
-    "kp": "None",
+    "kp": "",
     "kpc": "",
     "pc": "興津 新 / 葦原葦簀\n太平洋 宇一 / 海星\n鴲凪 真琴 / 新高\n津々崎 秋鹿 / 日雀",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/052.png"
   },
   {
     "id": "051",
@@ -153,7 +153,7 @@
     "kpc": "",
     "pc": "興津 新 / 新高\n太平洋 宇一 / 海星\n鴲凪 真琴 / 日雀\n津々崎 秋鹿 / 葦原葦簀",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/051.png"
   },
   {
     "id": "025",
@@ -166,7 +166,7 @@
     "kpc": "",
     "pc": "スレイ\nフヨウ\n富士・曙・アングリクス\nエリニュス・セリノフォート\nシヴィアン・マグナス\nマカオン・アンジェロス\nガラガラ\nアルジョンテ・シャリオ\nソフィア・チェン\nモズ\nズィーク・トップ\nサミュエル・カッシーニ\nアロエリーナ・トマティーナ\nレオニダス=グリザイユ\nトトノエ・トントン・マスワナ\nアハト\nベス・フラーズ\nシリュス＝プティプラン・ド・ベルジュ\n不二倉 文売\nフェレア\nヒジリ\nローランド=ニューゲート",
     "result": "全生還",
-    "image": ""
+    "image": "/trpg-log/images/025.png"
   },
   {
     "id": "049",
@@ -179,7 +179,7 @@
     "kpc": "",
     "pc": "Issam / 海星\nパラディス / 日雀\nヤークート / 葦原葦簀\nラーニヤ / 灘",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/049.png"
   },
   {
     "id": "048",
@@ -192,7 +192,7 @@
     "kpc": "",
     "pc": "興津 新 / 海星\n太平洋 宇一 / 新高\n鴲凪 真琴 / 日雀\n津々崎 秋鹿 / 葦原葦簀",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/048.png"
   },
   {
     "id": "047",
@@ -205,7 +205,7 @@
     "kpc": "",
     "pc": "破壊宮 工作 / 新高\nヌスムワヨ三世 / 捲土重来\n御子柴 イオ / 葦原葦簀\nストロベリースペシャルタイム / 海星",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/047.png"
   },
   {
     "id": "045",
@@ -218,7 +218,7 @@
     "kpc": "",
     "pc": "角屋敷 鴟沓 / 日雀\n浦賀 富嶽 / 海星",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/045.png"
   },
   {
     "id": "024",
@@ -231,7 +231,7 @@
     "kpc": "",
     "pc": "鶸田 ヨミ / 日雀\n潤儀 映 / 捲土重来",
     "result": "全生還",
-    "image": ""
+    "image": "/trpg-log/images/024.png"
   },
   {
     "id": "023",
@@ -244,7 +244,7 @@
     "kpc": "",
     "pc": "イタル / 日雀\n鹿島灘 冴和 / 海星",
     "result": "3生還1ロス",
-    "image": ""
+    "image": "/trpg-log/images/023.png"
   },
   {
     "id": "044",
@@ -257,7 +257,7 @@
     "kpc": "",
     "pc": "イタル / 日雀\n鹿島灘 冴和 / 海星",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/044.png"
   },
   {
     "id": "021",
@@ -268,9 +268,9 @@
     "writer": "",
     "kp": "海星",
     "kpc": "",
-    "pc": "スリープ\nアルバート・リーヴィス\nレイチェル・グラーナトゥム\nマティ・ミューリオイ\nエイデン・ジェネヴァ\nオズウェル・ベックリー\nラヴィ・トゥインクル\nデストロ・イヤ\nジョエル・ワーナー\nロドフロ・キーリオイ\nサンディ・クワイエット\nフジミヤ\nミクラル\nムム･ザ･ゴールデンチョコレート\nリーヴァン・コーズ\nフィプ=ブブ=ファニア\nガストン・レドモンド\n天使突抜 星子\n天使突抜 月子\nランベルト・グロウ\nユキムラ・グレンウィル\nクエリア・レビレド",
-    "result": "両生還",
-    "image": ""
+    "pc": "スリープ / 瀬尾\nアルバート・リーヴィス / 黎\nレイチェル・グラーナトゥム / たのCマン\nマティ・ミューリオイ / Akilico\nエイデン・ジェネヴァ / 新高\nオズウェル・ベックリー / 小野\nラヴィ・トゥインクル / べじ\nデストロ・イヤ / ダー様\nジョエル・ワーナー / 小野\nロドフロ・キーリオイ / Akilico\nサンディ・クワイエット / カストル\nフジミヤ / ハツ\nミクラル / あまた\nムム･ザ･ゴールデンチョコレート / 捲土重来\nリーヴァン・コーズ / ハツ\nフィプ=ブブ=ファニア / ねむねこ\nガストン・レドモンド / 小野\n天使突抜 星子 / シカシ\n天使突抜 月子 / シカシ\nランベルト・グロウ / べじ\nユキムラ・グレンウィル / たのCマン\nクエリア・レビレド / 日雀",
+    "result": "2生還20ロスト",
+    "image": "/trpg-log/images/021.png"
   },
   {
     "id": "022",
@@ -283,7 +283,7 @@
     "kpc": "",
     "pc": "角屋敷 鴟沓 / 日雀\n浦賀 富嶽 / 海星",
     "result": "両生還",
-    "image": ""
+    "image": "/trpg-log/images/022.png"
   },
   {
     "id": "042",
@@ -296,7 +296,7 @@
     "kpc": "",
     "pc": "イタル / 日雀\n鹿島灘 冴和 / 海星",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/042.png"
   },
   {
     "id": "043",
@@ -309,7 +309,7 @@
     "kpc": "",
     "pc": "角屋敷 鴟沓 / 日雀\n浦賀 富嶽 / 海星",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/043.png"
   },
   {
     "id": "038",
@@ -322,7 +322,7 @@
     "kpc": "",
     "pc": "Marius Mastronzo / 海星\nルパート・エルドラド / 新高\nミズ･“ヴァカント”･グレイ / 捲土重来\nブラント・ハート / 葦原葦簀",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/038.png"
   },
   {
     "id": "041",
@@ -331,11 +331,11 @@
     "category": "PL",
     "system": "Call of Cthulhu",
     "writer": "",
-    "kp": "ohari;)\nC-hicken",
+    "kp": "ohari;)",
     "kpc": "",
     "pc": "篠崎 国菊 / 新高\n猫瀬 真央 / 葦原葦簀\n永海 祥子 / 海星\n鴛海 那智 / 日雀",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/041.png"
   },
   {
     "id": "040",
@@ -344,11 +344,11 @@
     "category": "PL",
     "system": "Call of Cthulhu",
     "writer": "",
-    "kp": "ohari;)\nC-hicken",
+    "kp": "ohari;)",
     "kpc": "",
     "pc": "角屋敷 鴟沓 / 日雀\n浦賀 富嶽 / 海星",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/040.png"
   },
   {
     "id": "039",
@@ -361,7 +361,7 @@
     "kpc": "",
     "pc": "孳代 遊\n宝紐 聖\n寅川 雀\n敗卯 葬\n震 霞\nフシミ イオリ\n午頭 賢太郎\n未海 航星\n呻畠 岬\nSHU\n滅 晴\n備核 仁玲",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/039.png"
   },
   {
     "id": "037",
@@ -374,7 +374,7 @@
     "kpc": "",
     "pc": "Wellington White / 海星\n樽前 燕人 / 葦原葦簀\n十姉 阿賀妹 / 日雀",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/037.png"
   },
   {
     "id": "036",
@@ -387,7 +387,7 @@
     "kpc": "",
     "pc": "橙 錫蘭 / 海星\n鬼武 識 / 葦原葦簀\n景越 虎 / 新高\n閑華 / 日雀",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/036.png"
   },
   {
     "id": "035",
@@ -400,7 +400,7 @@
     "kpc": "",
     "pc": "入入川 ゆ理 / 捲土重来\n高砂 遥 / 日雀\n美麗 らむ / 葦原葦簀\n成田 仁海 / 海星",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/035.png"
   },
   {
     "id": "020",
@@ -412,8 +412,8 @@
     "kp": "海星",
     "kpc": "",
     "pc": "鴲凪 真琴 / 日雀\n太平洋 宇一 / 海星",
-    "result": "全生還",
-    "image": ""
+    "result": "両生還",
+    "image": "/trpg-log/images/020.png"
   },
   {
     "id": "019",
@@ -426,7 +426,7 @@
     "kpc": "",
     "pc": "興津 新 / 新高\n太平洋 宇一 / 海星\n鴲凪 真琴 / 日雀\n津々崎 秋鹿 / 葦原葦簀",
     "result": "全生還",
-    "image": ""
+    "image": "/trpg-log/images/019.png"
   },
   {
     "id": "018",
@@ -439,7 +439,7 @@
     "kpc": "",
     "pc": "興津 新 / 新高\n太平洋 宇一 / 海星\n鴲凪 真琴 / 日雀\n津々崎 秋鹿 / 葦原葦簀",
     "result": "全生還",
-    "image": ""
+    "image": "/trpg-log/images/018.png"
   },
   {
     "id": "034",
@@ -452,7 +452,7 @@
     "kpc": "",
     "pc": "興津 新 / 新高\n太平洋 宇一 / 海星\n鴲凪 真琴 / 日雀\n津々崎 秋鹿 / 葦原葦簀",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/034.png"
   },
   {
     "id": "033",
@@ -465,7 +465,7 @@
     "kpc": "",
     "pc": "興津 新 / 新高\n太平洋 宇一 / 海星\n鴲凪 真琴 / 日雀\n津々崎 秋鹿 / 葦原葦簀",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/033.png"
   },
   {
     "id": "032",
@@ -478,7 +478,7 @@
     "kpc": "",
     "pc": "久保田 朝日 / 新高\n千里 怜那 / 海星\n鴬生 理緒 / 日雀\n黒河 貴船 / 葦原葦簀",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/032.png"
   },
   {
     "id": "030",
@@ -491,7 +491,7 @@
     "kpc": "",
     "pc": "イタル / 日雀\n鹿島灘 冴和 / 海星",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/030.png"
   },
   {
     "id": "031",
@@ -504,7 +504,7 @@
     "kpc": "",
     "pc": "鴲凪 真琴 / 日雀\n太平洋 宇一 / 海星",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/031.png"
   },
   {
     "id": "017",
@@ -517,7 +517,7 @@
     "kpc": "",
     "pc": "マデリーン・R・バートレット / C-hicken\nナルコ・レム / うましか\nグリゼルダ・ファブリ / 天丼\nブライズ・コレット / 新高\nベルンハルト・ヴィルヘルム / 日雀\nピエール・スミス / 葦原葦簀",
     "result": "全生還",
-    "image": ""
+    "image": "/trpg-log/images/017.png"
   },
   {
     "id": "029",
@@ -530,7 +530,7 @@
     "kpc": "",
     "pc": "興津 新 / 新高\n太平洋 宇一 / 海星\n鴲凪 真琴 / 日雀\n津々崎 秋鹿 / 葦原葦簀",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/029.png"
   },
   {
     "id": "028",
@@ -543,7 +543,7 @@
     "kpc": "",
     "pc": "Wellington White / 海星\n樽前 燕人 / 葦原葦簀\n十姉 阿賀妹 / 日雀",
     "result": "",
-    "image": ""
+    "image": "/trpg-log/images/028.png"
   },
   {
     "id": "027",
@@ -556,7 +556,7 @@
     "kpc": "",
     "pc": "鯨岡 和音 / K鮭\nイロハ / 赫満\n鹿島灘 冴和 / 海星\nイタル / 日雀",
     "result": "全生還",
-    "image": ""
+    "image": "/trpg-log/images/027.png"
   },
   {
     "id": "026",
@@ -569,7 +569,7 @@
     "kpc": "",
     "pc": "船瀬 日向 / 新高\n船瀬 蓮司 / 海星",
     "result": "全生還",
-    "image": ""
+    "image": "/trpg-log/images/026.png"
   },
   {
     "id": "015",
@@ -582,7 +582,7 @@
     "kpc": "",
     "pc": "ザファー・ミトコフ / 日雀",
     "result": "生還",
-    "image": ""
+    "image": "/trpg-log/images/015.png"
   },
   {
     "id": "014",
@@ -595,7 +595,7 @@
     "kpc": "",
     "pc": "ザイン・ヘルシャフト / K鮭\nザファー・ミトコフ / 日雀\nピン・フーアン / かいの\nセシル・タレント / 精肉組合",
     "result": "全生還",
-    "image": ""
+    "image": "/trpg-log/images/014.png"
   },
   {
     "id": "013",
@@ -608,7 +608,7 @@
     "kpc": "",
     "pc": "ザイン・ヘルシャフト / K鮭\nザファー・ミトコフ / 日雀\nピン・フーアン / かいの\nセシル・タレント / 精肉組合",
     "result": "全生還",
-    "image": ""
+    "image": "/trpg-log/images/013.png"
   },
   {
     "id": "012",
@@ -621,7 +621,7 @@
     "kpc": "",
     "pc": "ザイン・ヘルシャフト / K鮭\nザファー・ミトコフ / 日雀\nピン・フーアン / かいの\nセシル・タレント / 精肉組合",
     "result": "全生還",
-    "image": ""
+    "image": "/trpg-log/images/012.png"
   },
   {
     "id": "011",
@@ -634,7 +634,7 @@
     "kpc": "",
     "pc": "美麗 らむ / 葦原葦簀\nセドリック 向井 / 日雀\n小椋 彩波 / カストル",
     "result": "全生還",
-    "image": ""
+    "image": "/trpg-log/images/011.png"
   },
   {
     "id": "010",
@@ -647,7 +647,7 @@
     "kpc": "",
     "pc": "初見 瞳矢 / 葦原葦簀\r\n毬藻田戸和 / 天丼\r\n常城 彩 / うましか\r\n鷹本 綾 / 新高",
     "result": "全生還",
-    "image": ""
+    "image": "/trpg-log/images/010.png"
   },
   {
     "id": "009",
@@ -660,7 +660,7 @@
     "kpc": "",
     "pc": "鴈金 蒼 / 日雀\n十霞 附 / C-hicken",
     "result": "両生還",
-    "image": ""
+    "image": "/trpg-log/images/009.png"
   },
   {
     "id": "008",
@@ -765,18 +765,5 @@
     "pc": "ザイン・ヘルシャフト / K鮭\nザファー・ミトコフ / 日雀\nピン・フーアン / かいの\nセシル・タレント / 精肉組合",
     "result": "全生還",
     "image": "/trpg-log/images/001.png"
-  },
-  {
-    "id": "054",
-    "title": "Sat Dec 30 1899 01:15:00 GMT+0900 (GMT+09:00)",
-    "date": "",
-    "category": "KP",
-    "system": "Call of Cthulhu",
-    "writer": "",
-    "kp": "日雀",
-    "kpc": "",
-    "pc": "太平洋 宇一 / 海星\n鴲凪 真琴 / 日雀",
-    "result": "",
-    "image": ""
   }
 ]
