@@ -1,29 +1,15 @@
 [
   {
     "id": "001",
-    "title": "同居人",
-    "date": "2021-11-07",
-    "system": "Call of Cthulhu",
+    "title": "蹂躙するは我が手にて",
+    "date": "2021-07-24",
     "category": "PL",
-    "writer": "超高音",
-    "kp": "KL",
-    "kpc": "",
-    "pc": "鴈金 蒼 / 日雀\n十霞 附 / C-hicken",
-    "result": "両生還",
-    "image": "/trpg-log/images/doukyonin.png"
-  }
-
-  {
-    "id": "002",
-    "title": "美味しいね、モグモグ",
-    "date": "2021-11-10",
     "system": "Call of Cthulhu",
-    "category": "KP",
-    "writer": "雪空鈴音",
-    "kp": "日雀",
+    "writer": "みやした",
+    "kp": "",
     "kpc": "",
-    "pc": "初見 瞳矢 / 葦原葦簀\n毬藻田戸和 / 天丼\n常城 彩 / うましか\n鷹本 綾 / 新高",
-    "result": "両生還",
-    "image": "/trpg-log/images/doukyonin.png"
+    "pc": "ザイン・ヘルシャフト / K鮭\nザファー・ミトコフ / 日雀\nピン・フーアン / かいの\nセシル・タレント / 精肉組合",
+    "result": "全生還",
+    "image": "/trpg-log/images/001.png"
   }
 ]
