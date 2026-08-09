@@ -1,5 +1,96 @@
 [
   {
+    "id": "010",
+    "title": "美味しいね、モグモグ",
+    "date": "2021-11-10",
+    "category": "KP",
+    "system": "Call of Cthulhu",
+    "writer": "雪空鈴音",
+    "kp": "日雀",
+    "kpc": "",
+    "pc": "初見 瞳矢 / 葦原葦簀\r\n毬藻田戸和 / 天丼\r\n常城 彩 / うましか\r\n鷹本 綾 / 新高",
+    "result": "全生還",
+    "image": ""
+  },
+  {
+    "id": "008",
+    "title": "豪華客船と怪盗団",
+    "date": "2021-10-29",
+    "category": "KP",
+    "system": "Call of Cthulhu",
+    "writer": "ショタコンくらげ",
+    "kp": "日雀",
+    "kpc": "",
+    "pc": "表参道 / 天丼\n鈴木 健 / うましか\nシーザー / C-hicken\n江永 光秀 / 優斗",
+    "result": "全生還",
+    "image": "/trpg-log/images/008.png"
+  },
+  {
+    "id": "007",
+    "title": "カタシロ",
+    "date": "2021-10-18",
+    "category": "KP",
+    "system": "Call of Cthulhu",
+    "writer": "ディズム",
+    "kp": "日雀",
+    "kpc": "",
+    "pc": "鹿耳 透 / うましか",
+    "result": "生還",
+    "image": "/trpg-log/images/007.png"
+  },
+  {
+    "id": "006",
+    "title": "星を喰む",
+    "date": "2021-10-14",
+    "category": "PL",
+    "system": "Call of Cthulhu",
+    "writer": "nekoyaka*",
+    "kp": "かいの",
+    "kpc": "",
+    "pc": "ザイン・ヘルシャフト / K鮭\nザファー・ミトコフ / 日雀\nピン・フーアン / かいの\nセシル・タレント / 精肉組合",
+    "result": "全生還",
+    "image": "/trpg-log/images/006.png"
+  },
+  {
+    "id": "005",
+    "title": "毒入りスープ",
+    "date": "2021-09-16",
+    "category": "KP",
+    "system": "Call of Cthulhu",
+    "writer": "泥紳士",
+    "kp": "日雀",
+    "kpc": "",
+    "pc": "盗人 竹嶽氏 / 天丼\n鹿耳 透 / うましか\n賽下 健吾 / 優斗",
+    "result": "全生還",
+    "image": "/trpg-log/images/005.png"
+  },
+  {
+    "id": "004",
+    "title": "Tue Sep 01 2026 00:00:00 GMT+0900 (GMT+09:00)",
+    "date": "2021-09-01",
+    "category": "PL",
+    "system": "Call of Cthulhu",
+    "writer": "圭",
+    "kp": "C-hicken",
+    "kpc": "沢渡 ユカコ / C-hicken",
+    "pc": "鴉東 芽 / 日雀",
+    "result": "ロスト",
+    "image": "/trpg-log/images/004.png"
+  },
+  {
+    "id": "003",
+    "title": "え!?お前バニークラブで働いてたってマジ!?",
+    "date": "2021-08-26",
+    "category": "PL",
+    "system": "Call of Cthulhu",
+    "writer": "限界灘",
+    "kp": "かいの",
+    "kpc": "",
+    "pc": "ザイン・ヘルシャフト / K鮭\nザファー・ミトコフ / 日雀\nピン・フーアン / かいの\nセシル・タレント / 精肉組合",
+    "result": "全生還",
+    "image": "/trpg-log/images/003.png"
+  },
+  {
     "id": "002",
     "title": "毒入りスープ",
     "date": "2021-08-22",
@@ -7,7 +98,7 @@
     "system": "Call of Cthulhu",
     "writer": "泥紳士",
     "kp": "かいの",
-    "kpc": "ピン・フーアン / かいの",
+    "kpc": "",
     "pc": "ザファー・ミトコフ / 日雀\nピン・フーアン / かいの\nセシル・タレント / 精肉組合",
     "result": "全生還",
     "image": "/trpg-log/images/002.png"
@@ -24,5 +115,18 @@
     "pc": "ザイン・ヘルシャフト / K鮭\nザファー・ミトコフ / 日雀\nピン・フーアン / かいの\nセシル・タレント / 精肉組合",
     "result": "全生還",
     "image": "/trpg-log/images/001.png"
+  },
+  {
+    "id": "009",
+    "title": "同居人",
+    "date": "",
+    "category": "PL",
+    "system": "Call of Cthulhu",
+    "writer": "超高音",
+    "kp": "KL",
+    "kpc": "",
+    "pc": "鴈金 蒼 / 日雀\n十霞 附 / C-hicken",
+    "result": "両生還",
+    "image": ""
   }
 ]
