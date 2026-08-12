@@ -559,6 +559,19 @@
     "image": "/trpg-log/images/027.png"
   },
   {
+    "id": "062",
+    "title": "唸れ！暁コメディーショー",
+    "date": "2022-01-19",
+    "category": "PL",
+    "system": "Call of Cthulhu",
+    "writer": "空の箸箱",
+    "kp": "かいの",
+    "kpc": "",
+    "pc": "入鳩間 崚 / 日雀\n春諧王助 / 捲土重来",
+    "result": "両生還",
+    "image": ""
+  },
+  {
     "id": "026",
     "title": "華筏、澪標",
     "date": "2022-01-17",
@@ -570,6 +583,32 @@
     "pc": "船瀬 日向 / 新高\n船瀬 蓮司 / 海星",
     "result": "全生還",
     "image": "/trpg-log/images/026.png"
+  },
+  {
+    "id": "061",
+    "title": "我が死を救済せよ",
+    "date": "2021-12-26",
+    "category": "PL",
+    "system": "Call of Cthulhu",
+    "writer": "ゆめまぼろし",
+    "kp": "ohari;)",
+    "kpc": "宍戸 茉莉",
+    "pc": "鵙谷 耀 / 日雀\n七誌 弘志 / 九服",
+    "result": "全生還",
+    "image": ""
+  },
+  {
+    "id": "060",
+    "title": "絶望の孤島",
+    "date": "2021-12-12",
+    "category": "KP",
+    "system": "Call of Cthulhu",
+    "writer": "コウノスケ",
+    "kp": "日雀",
+    "kpc": "",
+    "pc": "眞銅藤邑 / 葦原葦簀\r\n門倉開 / うましかさん\r\n鍋上浄 / 捲土重来さん",
+    "result": "1ロスト2生還",
+    "image": "/trpg-log/images/060.png"
   },
   {
     "id": "015",
