@@ -20,11 +20,10 @@ const sortedSessions = [...sessions].sort(
 		<meta
 			name="description"
 			content="TRPGで遊んだ卓の記録をまとめています。"
-	/>
+		/>
 	</head>
 
 	<body>
-
 		<main>
 
 			<!-- =========================
@@ -49,22 +48,41 @@ const sortedSessions = [...sessions].sort(
 
 
 			<!-- =========================
-			     卓一覧
+			     PL / KP フィルター
 			========================= -->
 
 			<div class="filters">
-				<button class="filter-button is-active" type="button" data-filter="ALL">
+
+				<button
+					class="filter-button is-active"
+					type="button"
+					data-filter="ALL"
+				>
 					ALL
 				</button>
 
-				<button class="filter-button" type="button" data-filter="PL">
+				<button
+					class="filter-button"
+					type="button"
+					data-filter="PL"
+				>
 					PL
 				</button>
 
-				<button class="filter-button" type="button" data-filter="KP">
+				<button
+					class="filter-button"
+					type="button"
+					data-filter="KP"
+				>
 					KP
 				</button>
+
 			</div>
+
+
+			<!-- =========================
+			     卓一覧
+			========================= -->
 
 			<section class="session-grid">
 
@@ -129,7 +147,6 @@ const sortedSessions = [...sessions].sort(
 			aria-hidden="true"
 		>
 
-			<!-- 黒い背景 -->
 			<div
 				class="modal-backdrop"
 				data-close-modal
@@ -143,7 +160,6 @@ const sortedSessions = [...sessions].sort(
 				aria-labelledby="modal-title"
 			>
 
-				<!-- 閉じるボタン -->
 				<button
 					class="modal-close"
 					type="button"
@@ -154,7 +170,7 @@ const sortedSessions = [...sessions].sort(
 				</button>
 
 
-				<!-- 大きい卓画像 -->
+				<!-- 卓画像 -->
 
 				<div class="modal-image-area">
 
@@ -195,8 +211,8 @@ const sortedSessions = [...sessions].sort(
 
 
 						<div class="detail-row">
-						<dt>KP / KPC</dt>
-						<dd id="modal-kpkpc"></dd>
+							<dt>KP / KPC</dt>
+							<dd id="modal-kpkpc"></dd>
 						</div>
 
 
@@ -225,7 +241,6 @@ const sortedSessions = [...sessions].sort(
 		========================= -->
 
 		<script>
-
 			const modal =
 				document.querySelector("#session-modal");
 
@@ -254,9 +269,9 @@ const sortedSessions = [...sessions].sort(
 				document.querySelector("#modal-result");
 
 
-			/* -------------------------
+			/* =========================
 			   モーダルを開く
-			------------------------- */
+			========================= */
 
 			document
 				.querySelectorAll(".session-card")
@@ -272,6 +287,8 @@ const sortedSessions = [...sessions].sort(
 								);
 
 
+							/* 画像 */
+
 							modalImage.src =
 								session.image;
 
@@ -279,9 +296,13 @@ const sortedSessions = [...sessions].sort(
 								`${session.title}の卓報告`;
 
 
+							/* タイトル */
+
 							modalTitle.textContent =
 								session.title;
 
+
+							/* 日付 */
 
 							modalDate.textContent =
 								new Date(
@@ -291,20 +312,32 @@ const sortedSessions = [...sessions].sort(
 								);
 
 
+							/* System */
+
 							modalSystem.textContent =
 								session.system || "—";
+
+
+							/* Writer */
 
 							modalWriter.textContent =
 								session.writer || "—";
 
+
+							/* KP / KPC */
+
 							const kpKpcLines = [];
 
 							if (session.kp) {
-								kpKpcLines.push(`KP：${session.kp}`);
+								kpKpcLines.push(
+									`KP：${session.kp}`
+								);
 							}
 
 							if (session.kpc) {
-								kpKpcLines.push(`KPC：${session.kpc}`);
+								kpKpcLines.push(
+									`KPC：${session.kpc}`
+								);
 							}
 
 							modalKpKpc.textContent =
@@ -312,12 +345,20 @@ const sortedSessions = [...sessions].sort(
 									? kpKpcLines.join("\n")
 									: "—";
 
+
+							/* PC / PL */
+
 							modalPc.textContent =
 								session.pc || "—";
+
+
+							/* Result */
 
 							modalResult.textContent =
 								session.result || "—";
 
+
+							/* モーダル表示 */
 
 							modal.classList.add(
 								"is-open"
@@ -330,16 +371,15 @@ const sortedSessions = [...sessions].sort(
 
 							document.body.style.overflow =
 								"hidden";
-
 						}
 					);
 
 				});
 
 
-			/* -------------------------
+			/* =========================
 			   モーダルを閉じる
-			------------------------- */
+			========================= */
 
 			function closeModal() {
 
@@ -354,7 +394,6 @@ const sortedSessions = [...sessions].sort(
 
 				document.body.style.overflow =
 					"";
-
 			}
 
 
@@ -384,16 +423,16 @@ const sortedSessions = [...sessions].sort(
 							"is-open"
 						)
 					) {
-
 						closeModal();
-
 					}
 
 				}
 			);
 
 
-			/* 卓画像の右クリックを無効化 */
+			/* =========================
+			   卓画像の右クリックを無効化
+			========================= */
 
 			document.addEventListener(
 				"contextmenu",
@@ -407,49 +446,78 @@ const sortedSessions = [...sessions].sort(
 							"modal-image"
 						)
 					) {
-
 						event.preventDefault();
-
 					}
 
 				}
 			);
 
-			/* -------------------------
-			PL / KP フィルター
-			------------------------- */
+
+			/* =========================
+			   PL / KP フィルター
+			========================= */
 
 			const filterButtons =
-				document.querySelectorAll(".filter-button");
+				document.querySelectorAll(
+					".filter-button"
+				);
 
 			const sessionCards =
-				document.querySelectorAll(".session-card");
+				document.querySelectorAll(
+					".session-card"
+				);
+
 
 			filterButtons.forEach((button) => {
-				button.addEventListener("click", () => {
-					const filter =
-						button.dataset.filter;
 
-					filterButtons.forEach((item) => {
-						item.classList.remove("is-active");
-					});
+				button.addEventListener(
+					"click",
+					() => {
 
-					button.classList.add("is-active");
+						const filter =
+							button.dataset.filter;
 
-					sessionCards.forEach((card) => {
-						const category =
-							card.dataset.category;
 
-						if (
-							filter === "ALL" ||
-							category === filter
-						) {
-							card.hidden = false;
-						} else {
-							card.hidden = true;
-						}
-					});
-				});
+						/* 選択中のボタンを切り替え */
+
+						filterButtons.forEach(
+							(item) => {
+
+								item.classList.remove(
+									"is-active"
+								);
+
+							}
+						);
+
+						button.classList.add(
+							"is-active"
+						);
+
+
+						/* 卓カードを絞り込み */
+
+						sessionCards.forEach(
+							(card) => {
+
+								const category =
+									card.dataset.category;
+
+								if (
+									filter === "ALL" ||
+									category === filter
+								) {
+									card.hidden = false;
+								} else {
+									card.hidden = true;
+								}
+
+							}
+						);
+
+					}
+				);
+
 			});
 
 		</script>
@@ -470,9 +538,7 @@ const sortedSessions = [...sessions].sort(
 
 
 	:global(html) {
-
 		background: #1f2023;
-
 		color: #eeeeee;
 
 		font-family:
@@ -480,18 +546,13 @@ const sortedSessions = [...sessions].sort(
 			"Yu Gothic",
 			"Meiryo",
 			sans-serif;
-
 	}
 
 
 	:global(body) {
-
 		margin: 0;
-
 		min-width: 320px;
-
 		background: #1f2023;
-
 	}
 
 
@@ -505,7 +566,6 @@ const sortedSessions = [...sessions].sort(
 	========================= */
 
 	main {
-
 		width: min(
 			100% - 40px,
 			1120px
@@ -516,7 +576,6 @@ const sortedSessions = [...sessions].sort(
 		padding:
 			80px 0
 			120px;
-
 	}
 
 
@@ -530,24 +589,17 @@ const sortedSessions = [...sessions].sort(
 
 
 	.eyebrow {
-
-		margin:
-			0 0
-			10px;
+		margin: 0 0 10px;
 
 		color: #92969e;
 
 		font-size: 11px;
-
 		font-weight: 700;
-
 		letter-spacing: 0.2em;
-
 	}
 
 
 	h1 {
-
 		margin: 0;
 
 		font-size:
@@ -557,58 +609,73 @@ const sortedSessions = [...sessions].sort(
 				58px
 			);
 
+		line-height: 1.15;
 		letter-spacing: 0.03em;
-
 	}
 
 
 	.description {
-
 		margin-top: 18px;
 
 		color: #aeb1b7;
 
 		font-size: 14px;
-
 		line-height: 1.8;
-
 	}
 
+
+	/* =========================
+	   フィルター
+	========================= */
+
 	.filters {
-	display: flex;
-	gap: 8px;
-	margin-bottom: 32px;
-}
+		display: flex;
+		gap: 8px;
 
-.filter-button {
-	padding: 8px 18px;
-	border: 1px solid #45474d;
-	background: transparent;
-	color: #92969e;
-	font-size: 12px;
-	font-weight: 700;
-	letter-spacing: 0.08em;
-	cursor: pointer;
-	transition:
-		background-color 0.2s ease,
-		color 0.2s ease,
-		border-color 0.2s ease;
-}
+		margin-bottom: 32px;
+	}
 
-.filter-button:hover {
-	border-color: #747880;
-	color: #eeeeee;
-}
 
-.filter-button.is-active {
-	border-color: #eeeeee;
-	background: #eeeeee;
-	color: #1f2023;
-}
+	.filter-button {
+		padding: 8px 18px;
 
-.session-card[hidden] {
-	display: none;
-}
+		border:
+			1px solid
+			#45474d;
+
+		background: transparent;
+
+		color: #92969e;
+
+		font-size: 12px;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+
+		cursor: pointer;
+
+		transition:
+			background-color 0.2s ease,
+			color 0.2s ease,
+			border-color 0.2s ease;
+	}
+
+
+	.filter-button:hover {
+		border-color: #747880;
+		color: #eeeeee;
+	}
+
+
+	.filter-button.is-active {
+		border-color: #eeeeee;
+		background: #eeeeee;
+		color: #1f2023;
+	}
+
+
+	.session-card[hidden] {
+		display: none;
+	}
 
 
 	/* =========================
@@ -616,7 +683,6 @@ const sortedSessions = [...sessions].sort(
 	========================= */
 
 	.session-grid {
-
 		display: grid;
 
 		grid-template-columns:
@@ -628,12 +694,10 @@ const sortedSessions = [...sessions].sort(
 		gap:
 			36px
 			20px;
-
 	}
 
 
 	.session-card {
-
 		display: block;
 
 		min-width: 0;
@@ -649,33 +713,27 @@ const sortedSessions = [...sessions].sort(
 		text-align: left;
 
 		cursor: pointer;
-
 	}
 
 
 	.image-wrap {
-
 		overflow: hidden;
 
 		aspect-ratio: 4 / 3;
 
 		background: #2a2b2f;
-
 	}
 
 
 	.session-image {
-
 		display: block;
 
 		width: 100%;
-
 		height: 100%;
 
 		object-fit: cover;
 
 		user-select: none;
-
 		-webkit-user-drag: none;
 
 		pointer-events: none;
@@ -683,18 +741,13 @@ const sortedSessions = [...sessions].sort(
 		transition:
 			transform 0.25s ease,
 			opacity 0.25s ease;
-
 	}
 
 
 	.session-card:hover
 	.session-image {
-
-		transform:
-			scale(1.025);
-
+		transform: scale(1.025);
 		opacity: 0.88;
-
 	}
 
 
@@ -704,26 +757,18 @@ const sortedSessions = [...sessions].sort(
 
 
 	.session-info h2 {
-
-		margin:
-			0 0
-			7px;
+		margin: 0 0 7px;
 
 		font-size: 17px;
-
 		font-weight: 600;
 
 		line-height: 1.5;
-
 	}
 
 
 	.session-info time {
-
 		color: #7f838a;
-
 		font-size: 12px;
-
 	}
 
 
@@ -732,7 +777,6 @@ const sortedSessions = [...sessions].sort(
 	========================= */
 
 	.modal {
-
 		position: fixed;
 
 		inset: 0;
@@ -742,11 +786,9 @@ const sortedSessions = [...sessions].sort(
 		display: none;
 
 		align-items: center;
-
 		justify-content: center;
 
 		padding: 30px;
-
 	}
 
 
@@ -756,7 +798,6 @@ const sortedSessions = [...sessions].sort(
 
 
 	.modal-backdrop {
-
 		position: absolute;
 
 		inset: 0;
@@ -768,12 +809,10 @@ const sortedSessions = [...sessions].sort(
 
 		backdrop-filter:
 			blur(3px);
-
 	}
 
 
 	.modal-content {
-
 		position: relative;
 
 		z-index: 1;
@@ -805,7 +844,6 @@ const sortedSessions = [...sessions].sort(
 			rgb(
 				0 0 0 / 40%
 			);
-
 	}
 
 
@@ -814,20 +852,16 @@ const sortedSessions = [...sessions].sort(
 	========================= */
 
 	.modal-image-area {
-
 		display: flex;
 
 		align-items: center;
-
 		justify-content: center;
 
 		min-width: 0;
-
 	}
 
 
 	.modal-image {
-
 		display: block;
 
 		width: 100%;
@@ -837,9 +871,7 @@ const sortedSessions = [...sessions].sort(
 		object-fit: contain;
 
 		user-select: none;
-
 		-webkit-user-drag: none;
-
 	}
 
 
@@ -848,16 +880,13 @@ const sortedSessions = [...sessions].sort(
 	========================= */
 
 	.modal-details {
-
 		min-width: 0;
 
 		padding-top: 10px;
-
 	}
 
 
 	.modal-details h2 {
-
 		margin:
 			0 40px
 			8px 0;
@@ -865,18 +894,15 @@ const sortedSessions = [...sessions].sort(
 		font-size: 26px;
 
 		line-height: 1.5;
-
 	}
 
 
 	.modal-date {
-
 		margin: 0;
 
 		color: #888c93;
 
 		font-size: 12px;
-
 	}
 
 
@@ -886,7 +912,6 @@ const sortedSessions = [...sessions].sort(
 
 
 	.detail-row {
-
 		padding:
 			0 0
 			18px;
@@ -896,29 +921,24 @@ const sortedSessions = [...sessions].sort(
 		border-bottom:
 			1px solid
 			#3b3c41;
-
 	}
 
 
 	.detail-row dt {
-
 		margin-bottom: 6px;
 
 		color: #858991;
 
 		font-size: 10px;
-
 		font-weight: 700;
 
 		letter-spacing: 0.15em;
 
 		text-transform: uppercase;
-
 	}
 
 
 	.detail-row dd {
-
 		margin: 0;
 
 		font-size: 14px;
@@ -926,7 +946,6 @@ const sortedSessions = [...sessions].sort(
 		line-height: 1.8;
 
 		white-space: pre-wrap;
-
 	}
 
 
@@ -935,11 +954,9 @@ const sortedSessions = [...sessions].sort(
 	========================= */
 
 	.modal-close {
-
 		position: absolute;
 
 		top: 12px;
-
 		right: 16px;
 
 		z-index: 2;
@@ -953,13 +970,11 @@ const sortedSessions = [...sessions].sort(
 		color: #eeeeee;
 
 		font-size: 32px;
-
 		font-weight: 300;
 
 		line-height: 1;
 
 		cursor: pointer;
-
 	}
 
 
@@ -970,28 +985,29 @@ const sortedSessions = [...sessions].sort(
 
 	/* =========================
 	   タブレット
+	   801px未満：2列
 	========================= */
 
 	@media (max-width: 800px) {
 
 		.session-grid {
-
 			grid-template-columns:
 				repeat(
 					2,
 					minmax(0, 1fr)
 				);
 
+			gap:
+				28px
+				12px;
 		}
 
 
 		.modal-content {
-
 			grid-template-columns:
 				1fr;
 
 			gap: 24px;
-
 		}
 
 
@@ -1004,12 +1020,12 @@ const sortedSessions = [...sessions].sort(
 
 	/* =========================
 	   スマホ
+	   600px以下：1列
 	========================= */
 
-	@media (max-width: 520px) {
+	@media (max-width: 600px) {
 
 		main {
-
 			width:
 				min(
 					100% - 28px,
@@ -1019,54 +1035,105 @@ const sortedSessions = [...sessions].sort(
 			padding:
 				48px 0
 				80px;
-
 		}
 
 
+		/* ヘッダー */
+
 		.page-header {
+			margin-bottom: 40px;
+		}
+
+
+		.eyebrow {
+			font-size: 11px;
+
+			letter-spacing: 0.18em;
+		}
+
+
+		h1 {
+			font-size: 42px;
+
+			line-height: 1.05;
+
+			letter-spacing: -0.02em;
+		}
+
+
+		.description {
+			margin-top: 24px;
+
+			font-size: 14px;
+
+			line-height: 1.8;
+		}
+
+
+		/* フィルター */
+
+		.filters {
+			gap: 8px;
+
 			margin-bottom: 36px;
 		}
 
 
+		.filter-button {
+			padding:
+				10px
+				18px;
+
+			font-size: 12px;
+		}
+
+
+		/* 卓一覧 */
+
 		.session-grid {
-
 			grid-template-columns:
-				repeat(
-					2,
-					minmax(0, 1fr)
-				);
+				1fr;
 
-			gap:
-				26px
-				12px;
+			gap: 40px;
+		}
 
+
+		.image-wrap {
+			aspect-ratio: 16 / 9;
 		}
 
 
 		.session-info {
-			padding-top: 10px;
+			padding-top: 12px;
 		}
 
 
 		.session-info h2 {
+			margin-bottom: 6px;
 
-			margin-bottom: 5px;
+			font-size: 18px;
 
-			font-size: 14px;
-
+			line-height: 1.5;
 		}
 
 
-		.modal {
+		.session-info time {
+			font-size: 13px;
+		}
 
+
+		/* モーダル */
+
+		.modal {
 			padding: 10px;
 
 			align-items: flex-start;
-
 		}
 
 
 		.modal-content {
+			grid-template-columns:
+				1fr;
 
 			gap: 20px;
 
@@ -1081,7 +1148,6 @@ const sortedSessions = [...sessions].sort(
 				48px
 				18px
 				24px;
-
 		}
 
 
@@ -1096,11 +1162,9 @@ const sortedSessions = [...sessions].sort(
 
 
 		.modal-details h2 {
-
 			margin-right: 0;
 
 			font-size: 21px;
-
 		}
 
 	}
