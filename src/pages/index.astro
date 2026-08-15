@@ -1144,7 +1144,7 @@ const sortedSessions = [...sessions].sort(
 		display: none;
 	}
 
-	.page-button {
+	:global(.page-button) {
 		padding: 9px 14px;
 		border: 1px solid #45474d;
 		background: transparent;
@@ -1155,16 +1155,16 @@ const sortedSessions = [...sessions].sort(
 		cursor: pointer;
 	}
 
-	.page-button:hover:not(:disabled) {
+	:global(.page-button:hover:not(:disabled)) {
 		border-color: #eeeeee;
 	}
 
-	.page-button:disabled {
+	:global(.page-button:disabled) {
 		opacity: 0.28;
 		cursor: default;
 	}
 
-	.page-info {
+	:global(.page-info) {
 		min-width: 70px;
 		color: #888c93;
 		font-size: 12px;
@@ -1191,7 +1191,7 @@ const sortedSessions = [...sessions].sort(
 	}
 
 
-	.session-card {
+	:global(.session-card) {
 		display: block;
 
 		min-width: 0;
@@ -1210,7 +1210,7 @@ const sortedSessions = [...sessions].sort(
 	}
 
 
-	.image-wrap {
+	:global(.image-wrap) {
 		overflow: hidden;
 
 		aspect-ratio: 4 / 3;
@@ -1219,7 +1219,7 @@ const sortedSessions = [...sessions].sort(
 	}
 
 
-	.session-image {
+	:global(.session-image) {
 		display: block;
 
 		width: 100%;
@@ -1239,18 +1239,18 @@ const sortedSessions = [...sessions].sort(
 
 
 	.session-card:hover
-	.session-image {
+	:global(.session-image) {
 		transform: scale(1.025);
 		opacity: 0.88;
 	}
 
 
-	.session-info {
+	:global(.session-info) {
 		padding-top: 14px;
 	}
 
 
-	.session-info h2 {
+	:global(.session-info h2) {
 		margin: 0 0 7px;
 
 		font-size: 17px;
@@ -1260,7 +1260,7 @@ const sortedSessions = [...sessions].sort(
 	}
 
 
-	.session-info time {
+	:global(.session-info time) {
 		color: #7f838a;
 		font-size: 12px;
 	}
@@ -1592,17 +1592,17 @@ const sortedSessions = [...sessions].sort(
 		}
 
 
-		.image-wrap {
+		:global(.image-wrap) {
 			aspect-ratio: 16 / 9;
 		}
 
 
-		.session-info {
+		:global(.session-info) {
 			padding-top: 12px;
 		}
 
 
-		.session-info h2 {
+		:global(.session-info h2) {
 			margin-bottom: 6px;
 
 			font-size: 18px;
@@ -1611,7 +1611,7 @@ const sortedSessions = [...sessions].sort(
 		}
 
 
-		.session-info time {
+		:global(.session-info time) {
 			font-size: 13px;
 		}
 
