@@ -235,6 +235,11 @@ const sortedSessions = [...sessions].sort(
 							<dd id="modal-result"></dd>
 						</div>
 
+						<div class="detail-row">
+							<dt>NOTE</dt>
+							<dd id="modal-note"></dd>
+						</div>
+
 					</dl>
 
 				</div>
@@ -315,6 +320,9 @@ const sortedSessions = [...sessions].sort(
 
 			const modalResult =
 				document.querySelector("#modal-result");
+
+			const modalNote =
+				document.querySelector("#modal-note");
 
 
 			/* =========================
@@ -721,6 +729,8 @@ const sortedSessions = [...sessions].sort(
 				modalResult.textContent =
 					session.result || "—";
 
+				modalNote.textContent =
+					session.note || "—";
 
 				modal.classList.add(
 					"is-open"
