@@ -10,7 +10,8 @@
     "kpc": "鴈金 蒼",
     "pc": "十霞 附 / C-hicken",
     "result": "両生還",
-    "image": "/trpg-log/images/225.png"
+    "image": "/trpg-log/images/同居人継続",
+    "note": "225.png"
   },
   {
     "id": "221",
@@ -23,7 +24,8 @@
     "kpc": "ディオン・ハリアトゥス",
     "pc": "アーロン・パーカー / sasi\r\nオリヴィア・ウォトソン / 九服\r\nシリル・K・レストレンジ / ohari;)",
     "result": "全生還",
-    "image": "/trpg-log/images/221.png"
+    "image": "/trpg-log/images/SSS.S継続",
+    "note": "221.png"
   },
   {
     "id": "224",
@@ -36,7 +38,8 @@
     "kpc": "宝梅 紗鶯",
     "pc": "八木曾 紫水 / あほゆ",
     "result": "両生還",
-    "image": "/trpg-log/images/224.png"
+    "image": "/trpg-log/images/花ヶ丘継続",
+    "note": "224.png"
   },
   {
     "id": "223",
@@ -49,7 +52,8 @@
     "kpc": "",
     "pc": "峰松 緋敦 / サメ\r\n宝梅 紗鶯 / 日雀\r\n藤ノ宮 乃々 / hacca\r\n八木曾 紫水 / あほゆ\r\n猪尾 摩利 / きりん\r\n時任 信 / 藤崎\r\n日柳 涼音 / よしお",
     "result": "全生還",
-    "image": "/trpg-log/images/223.png"
+    "image": "/trpg-log/images/花ヶ丘継続",
+    "note": "223.png"
   },
   {
     "id": "222",
@@ -62,7 +66,8 @@
     "kpc": "",
     "pc": "宝梅 紗鶯 / 日雀\n藤ノ宮 乃々 / hacca\n八木曾 紫水 / あほゆ",
     "result": "全生還",
-    "image": "/trpg-log/images/222.png"
+    "image": "/trpg-log/images/花ヶ丘継続",
+    "note": "222.png"
   },
   {
     "id": "214",
@@ -75,7 +80,22 @@
     "kpc": "藤ノ宮 乃々",
     "pc": "宝梅 紗鶯 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/214.png"
+    "image": "/trpg-log/images/花ヶ丘継続",
+    "note": "214.png"
+  },
+  {
+    "id": "227",
+    "title": "青い△",
+    "date": "2026-07-07",
+    "category": "KP",
+    "system": "Call of Cthulhu",
+    "writer": "ヴォンボ",
+    "kp": "日雀",
+    "kpc": "",
+    "pc": "峰松 緋敦  /  サメ",
+    "result": "生還",
+    "image": "/trpg-log/images/花ヶ丘自陣の鶴に回したよ",
+    "note": "227.png"
   },
   {
     "id": "220",
@@ -88,7 +108,8 @@
     "kpc": "宝梅 紗鶯",
     "pc": "藤ノ宮 乃々 / hacca",
     "result": "両生還",
-    "image": "/trpg-log/images/220.png"
+    "image": "",
+    "note": "220.png"
   },
   {
     "id": "219",
@@ -101,7 +122,8 @@
     "kpc": "",
     "pc": "猪尾 摩利 / きりん",
     "result": "生還",
-    "image": "/trpg-log/images/219.png"
+    "image": "/trpg-log/images/花ヶ丘自陣の猪に回した",
+    "note": "219.png"
   },
   {
     "id": "218",
@@ -114,7 +136,8 @@
     "kpc": "宝梅 紗鶯",
     "pc": "八木曾 紫水 / あほゆ",
     "result": "両生還",
-    "image": "/trpg-log/images/218.png"
+    "image": "/trpg-log/images/花ヶ丘継続",
+    "note": "218.png"
   },
   {
     "id": "217",
@@ -127,7 +150,8 @@
     "kpc": "",
     "pc": "宝梅 紗鶯 / 日雀",
     "result": "生還",
-    "image": "/trpg-log/images/217.png"
+    "image": "/trpg-log/images/花ヶ丘継続",
+    "note": "217.png"
   },
   {
     "id": "216",
@@ -140,7 +164,8 @@
     "kpc": "鳳条 紫",
     "pc": "宝梅 紗鶯 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/216.png"
+    "image": "/trpg-log/images/花ヶ丘継続\n他陣の鳳凰と遊んだ",
+    "note": "216.png"
   },
   {
     "id": "215",
@@ -153,7 +178,8 @@
     "kpc": "閑華",
     "pc": "景越 虎 / 新高",
     "result": "両生還",
-    "image": "/trpg-log/images/215.png"
+    "image": "/trpg-log/images/サイレン継続",
+    "note": "215.png"
   },
   {
     "id": "213",
@@ -166,7 +192,8 @@
     "kpc": "宝梅 紗鶯",
     "pc": "藤ノ宮 乃々 / hacca\n八木曾 紫水 / あほゆ",
     "result": "全生還",
-    "image": "/trpg-log/images/213.png"
+    "image": "/trpg-log/images/花ヶ丘継続",
+    "note": "213.png"
   },
   {
     "id": "212",
@@ -179,7 +206,8 @@
     "kpc": "",
     "pc": "宝梅 紗鶯 / 日雀",
     "result": "生還",
-    "image": "/trpg-log/images/212.png"
+    "image": "/trpg-log/images/花ヶ丘継続",
+    "note": "212.png"
   },
   {
     "id": "211",
@@ -192,7 +220,8 @@
     "kpc": "",
     "pc": "HO1 松に鶴\n峰松 緋敦 / サメ\n\nHO2 梅に鶯\n宝梅 紗鶯 / 日雀\n\nHO3 桜に幕\n九条院 我桜 / ohari;)\n\nHO4 藤に不如帰\n藤ノ宮 乃々 / hacca\n\nHO5 菖蒲に八橋\n八木曾 紫水 / あほゆ\n\nHO6 牡丹に蝶\n天香院 燈胡 / ささら\n\nHO7 萩に猪\n猪尾 摩利 / きりん\n\nHO8 芒に月\n時任 信 / ブリ\n\nHO9 菊に杯\n貴船 ルカ / 萩内\n\nHO10 紅葉に鹿\n橿禄 慶昭 / sasi\n\nHO11 柳に燕\n日柳 涼音 / よしお\n\nHO12 桐に鳳凰\n五宝 鳳良 / torowa",
     "result": "全生還",
-    "image": "/trpg-log/images/211.png"
+    "image": "/trpg-log/images/大変だった",
+    "note": "211.png"
   },
   {
     "id": "210",
@@ -205,7 +234,8 @@
     "kpc": "",
     "pc": "禊 呉羽 / しのもり\r\n帯鵟 宰 / 日雀",
     "result": "両ロスト",
-    "image": "/trpg-log/images/210.png"
+    "image": "",
+    "note": "210.png"
   },
   {
     "id": "054",
@@ -218,7 +248,8 @@
     "kpc": "鴲凪 真琴",
     "pc": "太平洋 宇一 / 海星",
     "result": "両生還",
-    "image": "/trpg-log/images/054.png"
+    "image": "/trpg-log/images/庭師継続",
+    "note": "054.png"
   },
   {
     "id": "059",
@@ -231,7 +262,8 @@
     "kpc": "パラディス",
     "pc": "イサーム / 海星",
     "result": "両生還",
-    "image": "/trpg-log/images/059.png"
+    "image": "/trpg-log/images/カスモツ現コン継続",
+    "note": "059.png"
   },
   {
     "id": "209",
@@ -244,7 +276,8 @@
     "kpc": "祕密喰 行火",
     "pc": "沼川 糸希 / 新高",
     "result": "END6",
-    "image": "/trpg-log/images/209.png"
+    "image": "",
+    "note": "209.png"
   },
   {
     "id": "057",
@@ -257,7 +290,8 @@
     "kpc": "",
     "pc": "密多 聚人 / 捲土重来\n雪畠 加織 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/057.png"
+    "image": "",
+    "note": "057.png"
   },
   {
     "id": "207",
@@ -270,7 +304,8 @@
     "kpc": "鶴園 幸久",
     "pc": "漆野 斑 / ぱん",
     "result": "両生還",
-    "image": "/trpg-log/images/207.png"
+    "image": "/trpg-log/images/かいマホ継続",
+    "note": "207.png"
   },
   {
     "id": "208",
@@ -283,7 +318,8 @@
     "kpc": "漆野 斑",
     "pc": "鶴園 幸久 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/208.png"
+    "image": "/trpg-log/images/かいマホ継続",
+    "note": "208.png"
   },
   {
     "id": "058",
@@ -296,7 +332,8 @@
     "kpc": "",
     "pc": "牡羊座\nMagna=Aries / 優斗\n\n牡牛座\nCasshikomah･Taurus / 捲土重来\n\n双子座\nRowan Cheng=Gemini / 葦原葦簀\n\n蟹座\nNicatio  Nicola  Irpinia Canpi Taurasini Cancer / 新高\n\n獅子座\nブライド・レオ / バルト海洋葬\n\n乙女座\nMichel・\" House Keeper \"・Libra / うましか\n\n天秤座\nCharlie Libra / C-hicken\n\n蠍座\nVilian・hex-A・Scorpiu / ふしみいよ\n\n射手座\nAkimbo Bobombo Sagittarius / 天丼\n\n山羊座\nVela Capricornus / 海星\n\n水瓶座\nRaphsy Aquarius / 灘\n\n魚座\nPearl Pingpong Pisces / ヲタリア食堂",
     "result": "全生還",
-    "image": "/trpg-log/images/058.png"
+    "image": "/trpg-log/images/ドキッ！身内だらけの十二星座二週目",
+    "note": "058.png"
   },
   {
     "id": "206",
@@ -309,7 +346,8 @@
     "kpc": "日雀",
     "pc": "24314 / 24314\r\n海洋葬 / バルト海洋葬\r\n海星 / 海星\r\n篠原いさこ / 葦原葦簀\r\n捲土重来 / 捲土重来\r\n新高 / 新高",
     "result": "全生還",
-    "image": "/trpg-log/images/206.png"
+    "image": "/trpg-log/images/身内創作企画コンバートで遊んだ",
+    "note": "206.png"
   },
   {
     "id": "205",
@@ -322,7 +360,8 @@
     "kpc": "",
     "pc": "吟 夏生 / 赤石\r\n蓮角 旭 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/205.png"
+    "image": "",
+    "note": "205.png"
   },
   {
     "id": "056",
@@ -335,7 +374,8 @@
     "kpc": "",
     "pc": "ニョル･レンガイ / 捲土重来\n但馬 巴 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/056.png"
+    "image": "",
+    "note": "056.png"
   },
   {
     "id": "203",
@@ -348,7 +388,8 @@
     "kpc": "鵙谷 耀",
     "pc": "七誌 弘志 / 九服",
     "result": "両生還",
-    "image": "/trpg-log/images/203.png"
+    "image": "/trpg-log/images/我が死継続（ロストしている二人なので生存IF）",
+    "note": "203.png"
   },
   {
     "id": "202",
@@ -361,7 +402,8 @@
     "kpc": "",
     "pc": "古舘 勤之介 / 九服\r\n鳥之 / れいんぼ～",
     "result": "両生還",
-    "image": "/trpg-log/images/202.png"
+    "image": "/trpg-log/images/自作シナリオ",
+    "note": "202.png"
   },
   {
     "id": "201",
@@ -374,7 +416,8 @@
     "kpc": "",
     "pc": "天丼",
     "result": "生還",
-    "image": "/trpg-log/images/201.png"
+    "image": "",
+    "note": "201.png"
   },
   {
     "id": "200",
@@ -387,7 +430,8 @@
     "kpc": "ディオン・ハリアトゥス",
     "pc": "アーロン・パーカー / sasi",
     "result": "両生還",
-    "image": "/trpg-log/images/200.png"
+    "image": "/trpg-log/images/SSS.S継続",
+    "note": "200.png"
   },
   {
     "id": "055",
@@ -400,7 +444,8 @@
     "kpc": "",
     "pc": "角屋敷 鴟沓 / 日雀\n浦賀 富嶽 / 海星",
     "result": "両生還",
-    "image": "/trpg-log/images/055.png"
+    "image": "/trpg-log/images/ロトあだ継続",
+    "note": "055.png"
   },
   {
     "id": "199",
@@ -413,7 +458,8 @@
     "kpc": "",
     "pc": "牟田 白夜 / 24314\r\n天秤 賢決 / バルト海洋葬\r\n東郷 基晴 / 優斗",
     "result": "全生還",
-    "image": "/trpg-log/images/199.png"
+    "image": "",
+    "note": "199.png"
   },
   {
     "id": "198",
@@ -426,7 +472,8 @@
     "kpc": "",
     "pc": "鮫島 綾人 / 藤崎\r\n遠賀 海月 / 朽碌",
     "result": "両生還",
-    "image": "/trpg-log/images/198.png"
+    "image": "",
+    "note": "198.png"
   },
   {
     "id": "197",
@@ -439,7 +486,8 @@
     "kpc": "",
     "pc": "セドリウス・ブラント / 花子\r\nコラード=ヴェルミリオ / 精肉組合",
     "result": "両生還",
-    "image": "/trpg-log/images/197.png"
+    "image": "",
+    "note": "197.png"
   },
   {
     "id": "195",
@@ -452,7 +500,8 @@
     "kpc": "",
     "pc": "帯鵟 宰 / 日雀",
     "result": "生還",
-    "image": "/trpg-log/images/195.png"
+    "image": "",
+    "note": "195.png"
   },
   {
     "id": "194",
@@ -465,7 +514,8 @@
     "kpc": "門真 新",
     "pc": "文崎 颯鳥 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/194.png"
+    "image": "/trpg-log/images/エンデビ継続",
+    "note": "194.png"
   },
   {
     "id": "196",
@@ -478,7 +528,8 @@
     "kpc": "",
     "pc": "鷲見 悠一／日雀\r\n印吟 武礼／🚽\r\n三角 直巳／クルマ\r\n九鳥 ぽっぽ／置き場",
     "result": "全生還",
-    "image": "/trpg-log/images/196.png"
+    "image": "",
+    "note": "196.png"
   },
   {
     "id": "193",
@@ -491,7 +542,8 @@
     "kpc": "",
     "pc": "宗岡 仁 / 24314\r\n真冬 碧 / ヲタリア食堂",
     "result": "両生還",
-    "image": "/trpg-log/images/193.png"
+    "image": "",
+    "note": "193.png"
   },
   {
     "id": "046",
@@ -504,7 +556,8 @@
     "kpc": "角屋敷 鴟沓",
     "pc": "浦賀 富嶽 / 海星",
     "result": "両生還",
-    "image": "/trpg-log/images/046.png"
+    "image": "/trpg-log/images/ロトあだ継続",
+    "note": "046.png"
   },
   {
     "id": "192",
@@ -517,7 +570,8 @@
     "kpc": "宍戸 茉莉",
     "pc": "公事 佗巳 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/192.png"
+    "image": "/trpg-log/images/花境継続",
+    "note": "192.png"
   },
   {
     "id": "191",
@@ -530,7 +584,8 @@
     "kpc": "",
     "pc": "飛野 当 / 赤石\n逢鳳 モナ / 日雀\n雪待 トキ / キョウ\n至 みさと / ひろむ",
     "result": "全生還",
-    "image": "/trpg-log/images/191.png"
+    "image": "/trpg-log/images/のばのば続編",
+    "note": "191.png"
   },
   {
     "id": "188",
@@ -543,7 +598,8 @@
     "kpc": "",
     "pc": "三城 牧 / うましか\n辞本 典 / ヲタリア食堂\n黒羽 光 / 天丼",
     "result": "全生還",
-    "image": "/trpg-log/images/188.png"
+    "image": "",
+    "note": "188.png"
   },
   {
     "id": "190",
@@ -556,7 +612,8 @@
     "kpc": "ダイシア・サジテリアス",
     "pc": "ルビー・L・ヴァルゴ / くらげ",
     "result": "両生還",
-    "image": "/trpg-log/images/190.png"
+    "image": "/trpg-log/images/十二星座継続",
+    "note": "190.png"
   },
   {
     "id": "189",
@@ -569,7 +626,8 @@
     "kpc": "ダイシア・サジテリアス",
     "pc": "ルビー・L・ヴァルゴ / くらげ",
     "result": "両生還",
-    "image": "/trpg-log/images/189.png"
+    "image": "/trpg-log/images/十二星座継続",
+    "note": "189.png"
   },
   {
     "id": "016",
@@ -582,7 +640,8 @@
     "kpc": "",
     "pc": "日高 孝 / 新高\n無悪 燐 / 葦原葦簀\n和田 かいそ / 海星",
     "result": "全生還",
-    "image": "/trpg-log/images/016.png"
+    "image": "",
+    "note": "016.png"
   },
   {
     "id": "187",
@@ -595,7 +654,8 @@
     "kpc": "閑華",
     "pc": "景越 虎 / 新高",
     "result": "両生還",
-    "image": "/trpg-log/images/187.png"
+    "image": "/trpg-log/images/サイレン継続\nあしの下でねむる続編",
+    "note": "187.png"
   },
   {
     "id": "186",
@@ -608,7 +668,8 @@
     "kpc": "",
     "pc": "頃周防 マエラ / アキツキ\n鬼さん / まくら",
     "result": "両ロスト",
-    "image": "/trpg-log/images/186.png"
+    "image": "",
+    "note": "186.png"
   },
   {
     "id": "185",
@@ -621,7 +682,8 @@
     "kpc": "鸚野 さくら",
     "pc": "鴻池 和 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/185.png"
+    "image": "/trpg-log/images/かいいぬし継続",
+    "note": "185.png"
   },
   {
     "id": "184",
@@ -634,7 +696,8 @@
     "kpc": "",
     "pc": "地堂 セツヤ / アキツキ\n新倉 亜美 / まくら",
     "result": "両生還",
-    "image": "/trpg-log/images/184.png"
+    "image": "",
+    "note": "184.png"
   },
   {
     "id": "183",
@@ -647,7 +710,8 @@
     "kpc": "",
     "pc": "濃尾平野（文崎 颯鳥） / 日雀\n群馬総社（門真 新） / 捲土重来",
     "result": "両生還",
-    "image": "/trpg-log/images/183.png"
+    "image": "",
+    "note": "183.png"
   },
   {
     "id": "181",
@@ -660,7 +724,8 @@
     "kpc": "",
     "pc": "フィレア・ソレイユ / バルト海洋葬\nスレイ・イディオ / バルト海洋葬\nローランド・ニューゲート / 優斗\nレオニダス・グリザイユ / 優斗\nガラガラ / 日雀\nベス・フラーズ / 新高\nエリニュス・セリノフォート / 新高\nアロエリーナ・トマティーナ / C-hicken\nサミュエル・カッシーニ / カストル\nマカオン・アンジェロス / カストル",
     "result": "全生還",
-    "image": "/trpg-log/images/181.png"
+    "image": "/trpg-log/images/十二星座継続",
+    "note": "181.png"
   },
   {
     "id": "182",
@@ -673,7 +738,8 @@
     "kpc": "六角 才蜜",
     "pc": "鵯洟 晃穂 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/182.png"
+    "image": "/trpg-log/images/愛蜂罠継続",
+    "note": "182.png"
   },
   {
     "id": "179",
@@ -686,7 +752,8 @@
     "kpc": "",
     "pc": "ディオン・ハリアトゥス / 日雀",
     "result": "生還",
-    "image": "/trpg-log/images/179.png"
+    "image": "/trpg-log/images/SSS.S継続",
+    "note": "179.png"
   },
   {
     "id": "180",
@@ -699,7 +766,8 @@
     "kpc": "",
     "pc": "ディオン・ハリアトゥス / 日雀",
     "result": "生還",
-    "image": "/trpg-log/images/180.png"
+    "image": "/trpg-log/images/SSS.S継続",
+    "note": "180.png"
   },
   {
     "id": "178",
@@ -712,7 +780,8 @@
     "kpc": "",
     "pc": "地堂 セツヤ / アキツキ\n新倉 亜美 / まくら",
     "result": "両生還",
-    "image": "/trpg-log/images/178.png"
+    "image": "",
+    "note": "178.png"
   },
   {
     "id": "050",
@@ -725,7 +794,8 @@
     "kpc": "",
     "pc": "孳代 遊 / 優斗\n宝紐 聖 / 灘\n寅川 雀 / 日雀\n敗卯 葬 / バルト海洋葬\n震 霞 / カストル\nフシミ イオリ / 24314\n午頭 賢太郎 / ヲタリア食堂\n未海 航星 / 海星\n呻畠 岬 / 葦原葦簀\nSHU / C-hicken\n滅 晴 / 灘\n備核 仁玲 / 新高",
     "result": "全生還",
-    "image": "/trpg-log/images/050.png"
+    "image": "/trpg-log/images/ゾスク継続",
+    "note": "050.png"
   },
   {
     "id": "053",
@@ -738,7 +808,8 @@
     "kpc": "寅川 雀",
     "pc": "孳代 遊 / 優斗\n宝紐 聖 / 灘\n敗卯 葬 / バルト海洋葬\n震 霞 / ЯOTƧAƆ\n午頭 賢太郎 / ヲタリア食堂\n未海 航星 / 海星\n呻畠 岬 / 葦原葦簀\n備核 仁玲 / 新高",
     "result": "全生還",
-    "image": "/trpg-log/images/053.png"
+    "image": "/trpg-log/images/ゾスク継続",
+    "note": "053.png"
   },
   {
     "id": "052",
@@ -751,7 +822,8 @@
     "kpc": "",
     "pc": "興津 新 / 葦原葦簀\n太平洋 宇一 / 海星\n鴲凪 真琴 / 新高\n津々崎 秋鹿 / 日雀",
     "result": "全生還",
-    "image": "/trpg-log/images/052.png"
+    "image": "/trpg-log/images/庭師継続",
+    "note": "052.png"
   },
   {
     "id": "051",
@@ -764,7 +836,8 @@
     "kpc": "",
     "pc": "興津 新 / 新高\n太平洋 宇一 / 海星\n鴲凪 真琴 / 日雀\n津々崎 秋鹿 / 葦原葦簀",
     "result": "全生還",
-    "image": "/trpg-log/images/051.png"
+    "image": "/trpg-log/images/庭師継続",
+    "note": "051.png"
   },
   {
     "id": "177",
@@ -777,7 +850,8 @@
     "kpc": "廿日 鈴壬",
     "pc": "鴫山 萩斗 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/177.png"
+    "image": "/trpg-log/images/ソプスク継続",
+    "note": "177.png"
   },
   {
     "id": "226",
@@ -790,11 +864,12 @@
     "kpc": "",
     "pc": "寅川 雀 / 日雀\n呻畠 岬 / 葦原葦簀\n敗卯 葬 / バルト海洋葬\nフシミ イオリ / 24314\n備核 仁玲 / 新高",
     "result": "全生還",
-    "image": "/trpg-log/images/226.png"
+    "image": "/trpg-log/images/ゾスク続編・継続",
+    "note": "226.png"
   },
   {
     "id": "176",
-    "title": "日雀",
+    "title": "冬霞に消ゆ",
     "date": "2025-02-23",
     "category": "KP",
     "system": "Call of Cthulhu",
@@ -803,7 +878,8 @@
     "kpc": "丹波 頂",
     "pc": "平田 源信 / 藤崎",
     "result": "両ロスト",
-    "image": "/trpg-log/images/176.png"
+    "image": "",
+    "note": "176.png"
   },
   {
     "id": "175",
@@ -816,7 +892,8 @@
     "kpc": "小樹 菟",
     "pc": "伊庭 龍次郎 / 捲土重来",
     "result": "両ロスト",
-    "image": "/trpg-log/images/175.png"
+    "image": "",
+    "note": "175.png"
   },
   {
     "id": "025",
@@ -829,7 +906,8 @@
     "kpc": "",
     "pc": "スレイ\nフヨウ\n富士・曙・アングリクス\nエリニュス・セリノフォート\nシヴィアン・マグナス\nマカオン・アンジェロス\nガラガラ\nアルジョンテ・シャリオ\nソフィア・チェン\nモズ\nズィーク・トップ\nサミュエル・カッシーニ\nアロエリーナ・トマティーナ\nレオニダス=グリザイユ\nトトノエ・トントン・マスワナ\nアハト\nベス・フラーズ\nシリュス＝プティプラン・ド・ベルジュ\n不二倉 文売\nフェレア\nヒジリ\nローランド=ニューゲート",
     "result": "全生還",
-    "image": "/trpg-log/images/025.png"
+    "image": "/trpg-log/images/ドキッ！身内だらけのGODARCA継続",
+    "note": "025.png"
   },
   {
     "id": "204",
@@ -842,7 +920,8 @@
     "kpc": "勝目 七四",
     "pc": "莨菪 須蔵 / 九服\n隠行大 甘藝 / ohari;)\n法華内 重 / sasi\n鳥越 黒兎 / 日雀",
     "result": "全生還",
-    "image": "/trpg-log/images/204.png"
+    "image": "/trpg-log/images/K県警K課続編・継続",
+    "note": "204.png"
   },
   {
     "id": "173",
@@ -855,7 +934,8 @@
     "kpc": "田手 主税",
     "pc": "妍妍 鷽学 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/173.png"
+    "image": "",
+    "note": "173.png"
   },
   {
     "id": "172",
@@ -868,7 +948,8 @@
     "kpc": "公事 佗巳",
     "pc": "宍戸 茉莉 / ohari;)",
     "result": "両生還",
-    "image": "/trpg-log/images/172.png"
+    "image": "/trpg-log/images/我が死HO3と遊んだよ",
+    "note": "172.png"
   },
   {
     "id": "171",
@@ -881,7 +962,8 @@
     "kpc": "アンナ・カナード",
     "pc": "アニエス / 新高\nアルルゥ / 捲土重来\nルーシュ・サイズ / 葦原葦簀",
     "result": "全生還",
-    "image": "/trpg-log/images/171.png"
+    "image": "/trpg-log/images/ジャン犬現コン継続",
+    "note": "171.png"
   },
   {
     "id": "170",
@@ -894,7 +976,8 @@
     "kpc": "",
     "pc": "アニエス / 新高\nアルルゥ / 捲土重来\nアンナ・カナード / 日雀\nルーシュ・サイズ / 葦原葦簀",
     "result": "3生還1ロスト",
-    "image": "/trpg-log/images/170.png"
+    "image": "",
+    "note": "170.png"
   },
   {
     "id": "169",
@@ -907,7 +990,8 @@
     "kpc": "閑華",
     "pc": "景越 虎 / 新高",
     "result": "両生還",
-    "image": "/trpg-log/images/169.png"
+    "image": "/trpg-log/images/サイレン継続",
+    "note": "169.png"
   },
   {
     "id": "049",
@@ -920,7 +1004,8 @@
     "kpc": "",
     "pc": "イサーム / 海星\nパラディス / 日雀\nヤークート / 葦原葦簀\nラーニヤ / 灘",
     "result": "全生還",
-    "image": "/trpg-log/images/049.png"
+    "image": "",
+    "note": "049.png"
   },
   {
     "id": "168",
@@ -933,7 +1018,8 @@
     "kpc": "結城 シイナ",
     "pc": "挧彁 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/168.png"
+    "image": "/trpg-log/images/のばのば継続",
+    "note": "168.png"
   },
   {
     "id": "167",
@@ -946,7 +1032,8 @@
     "kpc": "花獦 仔透",
     "pc": "夾竹 桃 / ヲタリア食堂",
     "result": "両ロスト",
-    "image": "/trpg-log/images/167.png"
+    "image": "/trpg-log/images/いわひら継続",
+    "note": "167.png"
   },
   {
     "id": "164",
@@ -959,7 +1046,8 @@
     "kpc": "挧彁",
     "pc": "結城 シイナ / 🚽",
     "result": "両生還",
-    "image": "/trpg-log/images/164.png"
+    "image": "/trpg-log/images/のばのば継続",
+    "note": "164.png"
   },
   {
     "id": "165",
@@ -972,7 +1060,8 @@
     "kpc": "",
     "pc": "フィオナ オーウェンス / 氷月\n荒川 天海 / しのもり",
     "result": "1生還1ロスト",
-    "image": "/trpg-log/images/165.png"
+    "image": "",
+    "note": "165.png"
   },
   {
     "id": "166",
@@ -985,7 +1074,8 @@
     "kpc": "",
     "pc": "志木巳 軋 / 蓮根ハスタ\n妙岩 明久 / ひろちゃん",
     "result": "両生還",
-    "image": "/trpg-log/images/166.png"
+    "image": "",
+    "note": "166.png"
   },
   {
     "id": "163",
@@ -998,7 +1088,8 @@
     "kpc": "",
     "pc": "花獦 仔透 / 日雀\n夾竹 桃 / ヲタリア食堂",
     "result": "両ロスト",
-    "image": "/trpg-log/images/163.png"
+    "image": "",
+    "note": "163.png"
   },
   {
     "id": "162",
@@ -1011,7 +1102,8 @@
     "kpc": "",
     "pc": "チェルカ・トローヴァ / 天丼男\r\nアッシャー・J・トワイニング / いづき\r\nアンヘロ・ペーニャ / 日雀\r\nジョニィ・アンダーソン / C-hicken",
     "result": "2生還2ロスト",
-    "image": "/trpg-log/images/162.png"
+    "image": "",
+    "note": "162.png"
   },
   {
     "id": "159",
@@ -1024,7 +1116,8 @@
     "kpc": "",
     "pc": "阿形 / きりん\n千早 / 藤崎",
     "result": "両生還",
-    "image": "/trpg-log/images/159.png"
+    "image": "",
+    "note": "159.png"
   },
   {
     "id": "161",
@@ -1037,7 +1130,8 @@
     "kpc": "鶉橋 立",
     "pc": "友成 富貴 / 葦原葦簀",
     "result": "両生還",
-    "image": "/trpg-log/images/161.png"
+    "image": "/trpg-log/images/ステガノ継続",
+    "note": "161.png"
   },
   {
     "id": "160",
@@ -1050,7 +1144,8 @@
     "kpc": "友成 富貴",
     "pc": "鶉橋 立 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/160.png"
+    "image": "/trpg-log/images/ステガノ継続",
+    "note": "160.png"
   },
   {
     "id": "048",
@@ -1063,7 +1158,8 @@
     "kpc": "",
     "pc": "興津 新 / 海星\n太平洋 宇一 / 新高\n鴲凪 真琴 / 日雀\n津々崎 秋鹿 / 葦原葦簀",
     "result": "全生還",
-    "image": "/trpg-log/images/048.png"
+    "image": "/trpg-log/images/庭師継続",
+    "note": "048.png"
   },
   {
     "id": "158",
@@ -1076,7 +1172,8 @@
     "kpc": "",
     "pc": "阿形 / きりん\n千早 / 藤崎",
     "result": "両生還",
-    "image": "/trpg-log/images/158.png"
+    "image": "",
+    "note": "158.png"
   },
   {
     "id": "047",
@@ -1089,7 +1186,8 @@
     "kpc": "",
     "pc": "破壊宮 工作 / 新高\nヌスムワヨ三世 / 捲土重来\n御子柴 イオ / 葦原葦簀\nストロベリースペシャルタイム / 海星",
     "result": "全生還",
-    "image": "/trpg-log/images/047.png"
+    "image": "",
+    "note": "047.png"
   },
   {
     "id": "174",
@@ -1102,7 +1200,8 @@
     "kpc": "",
     "pc": "沙魚川 璃々華 / 🚽\r\n鵠炉 梓 / 日雀\r\n常葉鞠南 / 葦原葦簀\r\n呉万年青 / 捲土重来",
     "result": "3生還1ロスト",
-    "image": "/trpg-log/images/174.png"
+    "image": "",
+    "note": "174.png"
   },
   {
     "id": "157",
@@ -1115,7 +1214,8 @@
     "kpc": "",
     "pc": "",
     "result": "",
-    "image": "/trpg-log/images/157.png"
+    "image": "",
+    "note": "157.png"
   },
   {
     "id": "156",
@@ -1128,7 +1228,8 @@
     "kpc": "ジス",
     "pc": "スティルビオ・ダンジェロ / 九服",
     "result": "両生還",
-    "image": "/trpg-log/images/156.png"
+    "image": "/trpg-log/images/らのエデ継続",
+    "note": "156.png"
   },
   {
     "id": "045",
@@ -1141,7 +1242,8 @@
     "kpc": "角屋敷 鴟沓",
     "pc": "浦賀 富嶽 / 海星",
     "result": "両生還",
-    "image": "/trpg-log/images/045.png"
+    "image": "/trpg-log/images/ロトあだ継続",
+    "note": "045.png"
   },
   {
     "id": "155",
@@ -1154,7 +1256,8 @@
     "kpc": "ファン・シンイー",
     "pc": "ジズ / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/155.png"
+    "image": "/trpg-log/images/らのエデ継続",
+    "note": "155.png"
   },
   {
     "id": "153",
@@ -1167,7 +1270,8 @@
     "kpc": "",
     "pc": "あんじ~♡（安城 新二）/ ひろちゃん",
     "result": "生還",
-    "image": "/trpg-log/images/153.png"
+    "image": "",
+    "note": "153.png"
   },
   {
     "id": "154",
@@ -1180,7 +1284,8 @@
     "kpc": "",
     "pc": "帯鵟 宰 / 日雀",
     "result": "生還",
-    "image": "/trpg-log/images/154.png"
+    "image": "",
+    "note": "154.png"
   },
   {
     "id": "152",
@@ -1193,7 +1298,8 @@
     "kpc": "",
     "pc": "狐井野 雅 / きりん\n志丐梟 瑠生 / 日雀\n狐井野 雅 / あほゆ",
     "result": "全生還",
-    "image": "/trpg-log/images/152.png"
+    "image": "",
+    "note": "152.png"
   },
   {
     "id": "024",
@@ -1206,7 +1312,8 @@
     "kpc": "",
     "pc": "鶸田 ヨミ / 日雀\n潤儀 映 / 捲土重来",
     "result": "全生還",
-    "image": "/trpg-log/images/024.png"
+    "image": "",
+    "note": "024.png"
   },
   {
     "id": "023",
@@ -1219,7 +1326,8 @@
     "kpc": "",
     "pc": "イタル / 日雀\n鹿島灘 冴和 / 海星",
     "result": "3生還1ロス",
-    "image": "/trpg-log/images/023.png"
+    "image": "/trpg-log/images/VOID継続",
+    "note": "023.png"
   },
   {
     "id": "044",
@@ -1232,7 +1340,8 @@
     "kpc": "イタル",
     "pc": "鹿島灘 冴和 / 海星",
     "result": "両生還",
-    "image": "/trpg-log/images/044.png"
+    "image": "/trpg-log/images/VOID継続",
+    "note": "044.png"
   },
   {
     "id": "151",
@@ -1245,7 +1354,8 @@
     "kpc": "",
     "pc": "逢坂 図 / sasi\n由地 円 / 塩味",
     "result": "両生還",
-    "image": "/trpg-log/images/151.png"
+    "image": "",
+    "note": "151.png"
   },
   {
     "id": "150",
@@ -1258,7 +1368,8 @@
     "kpc": "埜鳧 紗玄",
     "pc": "命婦 丈典 / 九服",
     "result": "両生還",
-    "image": "/trpg-log/images/150.png"
+    "image": "/trpg-log/images/じごさた継続",
+    "note": "150.png"
   },
   {
     "id": "021",
@@ -1271,7 +1382,8 @@
     "kpc": "",
     "pc": "スリープ / 瀬尾\nアルバート・リーヴィス / 黎\nレイチェル・グラーナトゥム / たのCマン\nマティ・ミューリオイ / Akilico\nエイデン・ジェネヴァ / 新高\nオズウェル・ベックリー / 小野\nラヴィ・トゥインクル / べじ\nデストロ・イヤ / ダー様\nジョエル・ワーナー / 小野\nロドフロ・キーリオイ / Akilico\nサンディ・クワイエット / カストル\nフジミヤ / ハツ\nミクラル / あまた\nムム･ザ･ゴールデンチョコレート / 捲土重来\nリーヴァン・コーズ / ハツ\nフィプ=ブブ=ファニア / ねむねこ\nガストン・レドモンド / 小野\n天使突抜 星子 / シカシ\n天使突抜 月子 / シカシ\nランベルト・グロウ / べじ\nユキムラ・グレンウィル / たのCマン\nクエリア・レビレド / 日雀",
     "result": "2生還20ロスト",
-    "image": "/trpg-log/images/021.png"
+    "image": "",
+    "note": "021.png"
   },
   {
     "id": "022",
@@ -1284,7 +1396,8 @@
     "kpc": "",
     "pc": "角屋敷 鴟沓 / 日雀\n浦賀 富嶽 / 海星",
     "result": "両生還",
-    "image": "/trpg-log/images/022.png"
+    "image": "/trpg-log/images/ロトあだ継続",
+    "note": "022.png"
   },
   {
     "id": "042",
@@ -1297,7 +1410,8 @@
     "kpc": "イタル",
     "pc": "鹿島灘 冴和 / 海星",
     "result": "両生還",
-    "image": "/trpg-log/images/042.png"
+    "image": "/trpg-log/images/VOID継続",
+    "note": "042.png"
   },
   {
     "id": "043",
@@ -1310,7 +1424,8 @@
     "kpc": "角屋敷 鴟沓",
     "pc": "浦賀 富嶽 / 海星",
     "result": "両生還",
-    "image": "/trpg-log/images/043.png"
+    "image": "/trpg-log/images/ロトあだ継続",
+    "note": "043.png"
   },
   {
     "id": "038",
@@ -1323,7 +1438,8 @@
     "kpc": "",
     "pc": "Marius Mastronzo / 海星\nルパート・エルドラド / 新高\nミズ･“ヴァカント”･グレイ / 捲土重来\nブラント・ハート / 葦原葦簀",
     "result": "1生還3ロスト",
-    "image": "/trpg-log/images/038.png"
+    "image": "",
+    "note": "038.png"
   },
   {
     "id": "041",
@@ -1336,7 +1452,8 @@
     "kpc": "",
     "pc": "篠崎 国菊 / 新高\n猫瀬 真央 / 葦原葦簀\n永海 祥子 / 海星\n鴛海 那智 / 日雀",
     "result": "全生還",
-    "image": "/trpg-log/images/041.png"
+    "image": "",
+    "note": "041.png"
   },
   {
     "id": "149",
@@ -1349,7 +1466,8 @@
     "kpc": "",
     "pc": "B / 🚽\n女有 / 赤石",
     "result": "両生還",
-    "image": "/trpg-log/images/149.png"
+    "image": "",
+    "note": "149.png"
   },
   {
     "id": "148",
@@ -1362,7 +1480,8 @@
     "kpc": "",
     "pc": "B / 🚽\n女有 / 赤石",
     "result": "両生還",
-    "image": "/trpg-log/images/148.png"
+    "image": "",
+    "note": "148.png"
   },
   {
     "id": "040",
@@ -1375,7 +1494,8 @@
     "kpc": "",
     "pc": "角屋敷 鴟沓 / 日雀\n浦賀 富嶽 / 海星",
     "result": "両生還",
-    "image": "/trpg-log/images/040.png"
+    "image": "",
+    "note": "040.png"
   },
   {
     "id": "039",
@@ -1388,7 +1508,8 @@
     "kpc": "",
     "pc": "孳代 遊 / 優斗\n宝紐 聖 / 灘\n寅川 雀 / 日雀\n敗卯 葬 / バルト海洋葬\n震 霞 / カストル\nフシミ イオリ / 24314\n午頭 賢太郎 / ヲタリア食堂\n未海 航星 / 海星\n呻畠 岬 / 葦原葦簀\nSHU / C-hicken\n滅 晴 / 灘\n備核 仁玲 / 新高",
     "result": "全生還",
-    "image": "/trpg-log/images/039.png"
+    "image": "",
+    "note": "039.png"
   },
   {
     "id": "147",
@@ -1401,7 +1522,8 @@
     "kpc": "ルビー・L・ヴァルゴ",
     "pc": "ダイシア・サジテリアス / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/147.png"
+    "image": "/trpg-log/images/十二星座継続",
+    "note": "147.png"
   },
   {
     "id": "146",
@@ -1414,7 +1536,8 @@
     "kpc": "アリーヨ・リノ・アリーズ",
     "pc": "レファロ・卫＝キャンサー / 九服\nジェム=オ=ジェミニ_ジェル=ヨ=ジェミニ / ohari;)\nダイシア・サジテリアス / 日雀\nナイル・カプリコルヌス / サクリファイスおよおよ",
     "result": "全生還",
-    "image": "/trpg-log/images/146.png"
+    "image": "/trpg-log/images/十二星座継続",
+    "note": "146.png"
   },
   {
     "id": "145",
@@ -1427,7 +1550,8 @@
     "kpc": "結城 シイナ",
     "pc": "挧彁 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/145.png"
+    "image": "/trpg-log/images/のばのば継続",
+    "note": "145.png"
   },
   {
     "id": "144",
@@ -1440,7 +1564,8 @@
     "kpc": "",
     "pc": "四月一日 皐月 / べじ\n四月一日 弥生 / 葦原葦簀",
     "result": "両生還",
-    "image": "/trpg-log/images/144.png"
+    "image": "",
+    "note": "144.png"
   },
   {
     "id": "037",
@@ -1453,7 +1578,8 @@
     "kpc": "",
     "pc": "Wellington White / 海星\n樽前 燕人 / 葦原葦簀\n十姉 阿賀妹 / 日雀",
     "result": "全生還",
-    "image": "/trpg-log/images/037.png"
+    "image": "/trpg-log/images/狂気山脈続編・継続",
+    "note": "037.png"
   },
   {
     "id": "143",
@@ -1466,7 +1592,8 @@
     "kpc": "",
     "pc": "莨菪 須蔵 / 九服\r\n隠行大 甘藝 / ohari;)\r\n法華内 重 / sasi\r\n鳥越 黒兎 / 日雀",
     "result": "全生還",
-    "image": "/trpg-log/images/143.png"
+    "image": "",
+    "note": "143.png"
   },
   {
     "id": "036",
@@ -1479,7 +1606,8 @@
     "kpc": "",
     "pc": "橙 錫蘭 / 海星\n鬼武 識 / 葦原葦簀\n景越 虎 / 新高\n閑華 / 日雀",
     "result": "全生還",
-    "image": "/trpg-log/images/036.png"
+    "image": "",
+    "note": "036.png"
   },
   {
     "id": "142",
@@ -1492,7 +1620,8 @@
     "kpc": "鶴園 幸久",
     "pc": "漆野 斑 / ぱん",
     "result": "両生還",
-    "image": "/trpg-log/images/142.png"
+    "image": "/trpg-log/images/かいマホ継続",
+    "note": "142.png"
   },
   {
     "id": "141",
@@ -1505,7 +1634,8 @@
     "kpc": "テミンク",
     "pc": "セリウス / 24314\nアライア / 優斗",
     "result": "全生還",
-    "image": "/trpg-log/images/141.png"
+    "image": "",
+    "note": "141.png"
   },
   {
     "id": "140",
@@ -1518,7 +1648,8 @@
     "kpc": "",
     "pc": "カザリ / 日雀\nロウイ / 捲土重来",
     "result": "両生還",
-    "image": "/trpg-log/images/140.png"
+    "image": "/trpg-log/images/大変だった",
+    "note": "140.png"
   },
   {
     "id": "139",
@@ -1531,7 +1662,8 @@
     "kpc": "ルビー・L・ヴァルゴ",
     "pc": "ダイシア・サジテリアス / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/139.png"
+    "image": "/trpg-log/images/十二星座継続",
+    "note": "139.png"
   },
   {
     "id": "138",
@@ -1544,7 +1676,8 @@
     "kpc": "",
     "pc": "宍戸 茉莉 / ohari;)",
     "result": "生還",
-    "image": "/trpg-log/images/138.png"
+    "image": "/trpg-log/images/自陣我が死HO3に回したよ",
+    "note": "138.png"
   },
   {
     "id": "137",
@@ -1557,7 +1690,8 @@
     "kpc": "ジズ",
     "pc": "スティルビオ・ダンジェロ / 九服",
     "result": "両生還",
-    "image": "/trpg-log/images/137.png"
+    "image": "/trpg-log/images/らのエデ継続",
+    "note": "137.png"
   },
   {
     "id": "035",
@@ -1570,7 +1704,8 @@
     "kpc": "",
     "pc": "入入川 ゆ理 / 捲土重来\n高砂 遥 / 日雀\n美麗 らむ / 葦原葦簀\n成田 仁海 / 海星",
     "result": "全生還",
-    "image": "/trpg-log/images/035.png"
+    "image": "",
+    "note": "035.png"
   },
   {
     "id": "136",
@@ -1583,7 +1718,8 @@
     "kpc": "",
     "pc": "小鞠 優希 / ればにら\n璦 / Ag\n彩木 佑 / 林\n佐織 / くらげ",
     "result": "全生還",
-    "image": "/trpg-log/images/136.png"
+    "image": "",
+    "note": "136.png"
   },
   {
     "id": "135",
@@ -1596,7 +1732,8 @@
     "kpc": "瑞鶴",
     "pc": "ウルフ / ぱん\n白城 / 赤石\n天使 / クルマ",
     "result": "全生還",
-    "image": "/trpg-log/images/135.png"
+    "image": "/trpg-log/images/かいマホ継続",
+    "note": "135.png"
   },
   {
     "id": "134",
@@ -1609,7 +1746,8 @@
     "kpc": "",
     "pc": "ヴァレンティーナ・ノストラ / バルト海洋葬\r\nルーク・アレイスター / 優斗\r\nサトー=スズキ=タカハシ / ヲタリア食堂\r\nエルト・シャール / うましか",
     "result": "3生還1ロスト",
-    "image": "/trpg-log/images/134.png"
+    "image": "",
+    "note": "134.png"
   },
   {
     "id": "133",
@@ -1622,7 +1760,8 @@
     "kpc": "",
     "pc": "六角 才蜜 / 捲土重来\n鵯洟 晃穂 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/133.png"
+    "image": "",
+    "note": "133.png"
   },
   {
     "id": "132",
@@ -1635,7 +1774,8 @@
     "kpc": "",
     "pc": "水無瀬　白亜 / 蓮丸。　\r\n熾聡　懸悟 / 花子　\r\n武蔵野　小杉 / ゆ",
     "result": "全生還",
-    "image": "/trpg-log/images/132.png"
+    "image": "",
+    "note": "132.png"
   },
   {
     "id": "130",
@@ -1648,7 +1788,8 @@
     "kpc": "",
     "pc": "らくらく台パン博士 / 不義\nアサヒ / sasi",
     "result": "両生還",
-    "image": "/trpg-log/images/130.png"
+    "image": "",
+    "note": "130.png"
   },
   {
     "id": "131",
@@ -1661,7 +1802,8 @@
     "kpc": "燕昇亭 征爾",
     "pc": "卯月 唯一 / ohari;)",
     "result": "両生還",
-    "image": "/trpg-log/images/131.png"
+    "image": "/trpg-log/images/ヤゼル継続",
+    "note": "131.png"
   },
   {
     "id": "129",
@@ -1674,7 +1816,8 @@
     "kpc": "",
     "pc": "らくらく台パン博士 / 不義\nアサヒ / sasi",
     "result": "両生還",
-    "image": "/trpg-log/images/129.png"
+    "image": "",
+    "note": "129.png"
   },
   {
     "id": "128",
@@ -1687,7 +1830,8 @@
     "kpc": "",
     "pc": "百鉾 福嗣 / 九服\n夜咫 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/128.png"
+    "image": "",
+    "note": "128.png"
   },
   {
     "id": "127",
@@ -1700,7 +1844,8 @@
     "kpc": "一之瀬 六実",
     "pc": "一六 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/127.png"
+    "image": "/trpg-log/images/進路葬談で輪廻転生した都市伝説課HO2と遊んだ 涙",
+    "note": "127.png"
   },
   {
     "id": "126",
@@ -1713,7 +1858,8 @@
     "kpc": "",
     "pc": "犬笛 / 捲土重来\r\nHaRe / バルト海洋葬\r\n王 陸光 / 優斗\r\n舞浜 陸海 / ヲタリア食堂",
     "result": "全生還",
-    "image": "/trpg-log/images/126.png"
+    "image": "",
+    "note": "126.png"
   },
   {
     "id": "125",
@@ -1726,7 +1872,8 @@
     "kpc": "",
     "pc": "義名 緋色 / 赤石\n挧彁 / 日雀さん\n汐澤 晃 / 九服さん\n結城 シイナ / 🚽さん",
     "result": "3生還1ロスト",
-    "image": "/trpg-log/images/125.png"
+    "image": "/trpg-log/images/涙",
+    "note": "125.png"
   },
   {
     "id": "124",
@@ -1739,7 +1886,8 @@
     "kpc": "",
     "pc": "佰星 / 新高",
     "result": "生還",
-    "image": "/trpg-log/images/124.png"
+    "image": "/trpg-log/images/ロストした自陣の都市伝説課HO2に回した 涙",
+    "note": "124.png"
   },
   {
     "id": "123",
@@ -1752,7 +1900,8 @@
     "kpc": "",
     "pc": "ディオン・ハリアトゥス / 日雀",
     "result": "生還",
-    "image": "/trpg-log/images/123.png"
+    "image": "/trpg-log/images/SSS.S継続",
+    "note": "123.png"
   },
   {
     "id": "122",
@@ -1765,7 +1914,8 @@
     "kpc": "埜鳧 紗玄",
     "pc": "命婦 丈典 / 九服",
     "result": "両生還",
-    "image": "/trpg-log/images/122.png"
+    "image": "",
+    "note": "122.png"
   },
   {
     "id": "121",
@@ -1778,7 +1928,8 @@
     "kpc": "アリーヨ・リノ・アリーズ",
     "pc": "ジェム=オ=ジェミニ/ジェル=ヨ=ジェミニ / ohari;)\nルビー・L・ヴァルゴ / くらげ\nダイシア・サジテリアス / 日雀\nナイル・カプリコルヌス / サクリファイスおよおよ",
     "result": "全生還",
-    "image": "/trpg-log/images/121.png"
+    "image": "/trpg-log/images/十二星座継続",
+    "note": "121.png"
   },
   {
     "id": "020",
@@ -1791,7 +1942,8 @@
     "kpc": "",
     "pc": "鴲凪 真琴 / 日雀\n太平洋 宇一 / 海星",
     "result": "両生還",
-    "image": "/trpg-log/images/020.png"
+    "image": "/trpg-log/images/庭師継続",
+    "note": "020.png"
   },
   {
     "id": "119",
@@ -1804,7 +1956,8 @@
     "kpc": "瑞鶴",
     "pc": "河上 金也 / ぱん",
     "result": "両生還",
-    "image": "/trpg-log/images/119.png"
+    "image": "/trpg-log/images/かいマホ継続",
+    "note": "119.png"
   },
   {
     "id": "120",
@@ -1817,7 +1970,8 @@
     "kpc": "",
     "pc": "ニータカ / 新高\nヲタリア / ヲタリア食堂",
     "result": "両生還",
-    "image": "/trpg-log/images/120.png"
+    "image": "",
+    "note": "120.png"
   },
   {
     "id": "019",
@@ -1830,7 +1984,8 @@
     "kpc": "",
     "pc": "興津 新 / 新高\n太平洋 宇一 / 海星\n鴲凪 真琴 / 日雀\n津々崎 秋鹿 / 葦原葦簀",
     "result": "全生還",
-    "image": "/trpg-log/images/019.png"
+    "image": "/trpg-log/images/庭師継続",
+    "note": "019.png"
   },
   {
     "id": "118",
@@ -1843,7 +1998,8 @@
     "kpc": "",
     "pc": "Joshua Bartoletti / 🚽\r\nLuciano Capaldi / うりのすけ\r\nAlessandro Rivera / クルマ\r\nRene Coulier / 赤石",
     "result": "全生還",
-    "image": "/trpg-log/images/118.png"
+    "image": "",
+    "note": "118.png"
   },
   {
     "id": "018",
@@ -1856,7 +2012,8 @@
     "kpc": "",
     "pc": "興津 新 / 新高\n太平洋 宇一 / 海星\n鴲凪 真琴 / 日雀\n津々崎 秋鹿 / 葦原葦簀",
     "result": "全生還",
-    "image": "/trpg-log/images/018.png"
+    "image": "/trpg-log/images/庭師継続",
+    "note": "018.png"
   },
   {
     "id": "116",
@@ -1869,7 +2026,8 @@
     "kpc": "ルビー・L・ヴァルゴ",
     "pc": "テオ・B・スコルピウス / 林\r\nダイシア・サジテリアス / 日雀",
     "result": "夢オチEND",
-    "image": "/trpg-log/images/116.png"
+    "image": "/trpg-log/images/十二星座継続",
+    "note": "116.png"
   },
   {
     "id": "117",
@@ -1882,7 +2040,8 @@
     "kpc": "ルビー・L・ヴァルゴ",
     "pc": "テオ・B・スコルピウス / 林\r\nダイシア・サジテリアス / 日雀",
     "result": "全生還",
-    "image": "/trpg-log/images/117.png"
+    "image": "/trpg-log/images/十二星座継続",
+    "note": "117.png"
   },
   {
     "id": "034",
@@ -1895,7 +2054,8 @@
     "kpc": "",
     "pc": "興津 新 / 新高\n太平洋 宇一 / 海星\n鴲凪 真琴 / 日雀\n津々崎 秋鹿 / 葦原葦簀",
     "result": "全生還",
-    "image": "/trpg-log/images/034.png"
+    "image": "/trpg-log/images/庭師継続",
+    "note": "034.png"
   },
   {
     "id": "115",
@@ -1908,7 +2068,8 @@
     "kpc": "",
     "pc": "イーヴォ・モレッティ / sasi\nスティルビオ・ダンジェロ / 九服\nファン・シンイー / ohari;)\nジズ / 日雀",
     "result": "全生還",
-    "image": "/trpg-log/images/115.png"
+    "image": "",
+    "note": "115.png"
   },
   {
     "id": "114",
@@ -1921,7 +2082,8 @@
     "kpc": "大稔 央",
     "pc": "黒鵐山 奈津樹 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/114.png"
+    "image": "/trpg-log/images/灰よか継続",
+    "note": "114.png"
   },
   {
     "id": "113",
@@ -1933,8 +2095,9 @@
     "kp": "うまち",
     "kpc": "",
     "pc": "青瑠璃 シトド / 日雀\n九蔵 臨 / 捲土重来",
-    "result": "たのしいね",
-    "image": "/trpg-log/images/113.png"
+    "result": "？？？",
+    "image": "/trpg-log/images/エンドたのしいね",
+    "note": "113.png"
   },
   {
     "id": "112",
@@ -1947,7 +2110,8 @@
     "kpc": "シリル・K・レストレンジ",
     "pc": "ディオン・ハリアトゥス / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/112.png"
+    "image": "/trpg-log/images/SSS.S継続",
+    "note": "112.png"
   },
   {
     "id": "111",
@@ -1960,7 +2124,8 @@
     "kpc": "",
     "pc": "HO牡羊座：\nAlliot・R・Aries\nアリーヨ・リノ・アリーズ / れいんぼ～\n\nHO牡牛座：\ncordelia・A・Taurus\nコーデリア・A・トーラス / 緑茶117\n\nHO双子座：\nGemm=O=Gemini/Giel=Jo=Gemini\nジェム=オ=ジェミニ/ジェル=ヨ=ジェミニ / ohari;)\n\nHO蟹座：\nLephallo・wèi＝Cancer\nレファロ・卫＝キャンサー / 九服\n\nHO獅子座：\nMatilda・C・D=Leo\nマティルダ・C・D・レオ / ささら\n\nHO乙女座：\nRuby・L・Virgo\nルビー・L・ヴァルゴ / くらげ\n\nHO天秤座：\nLibellee=Libeler=Lyra=Libra\nリブリ＝ライブラ＝ライラ＝リブラ / sasi\n\nHO蠍座：\nTheodore・Bella・Scorpius\nセオドア・ベラ・スコルピウス / 林\n\nHO射手座：\nDicaeum Sagittarius\nダイシア・サジテリアス / 日雀\n\nHO山羊座：\nNile・Capricornus\nナイル・カプリコルヌス / サクリファイスおよおよ\n\nHO水瓶座：\nAurora・Aquarius\nアウローラ・アクエリアス / 47\n\nHO魚座：\nSoocisky fishlover pisces\nスーシスキ・フィッシュラバー・ピシーズ / かのん",
     "result": "全生還",
-    "image": "/trpg-log/images/111.png"
+    "image": "",
+    "note": "111.png"
   },
   {
     "id": "110",
@@ -1973,7 +2138,8 @@
     "kpc": "瑞鶴",
     "pc": "ウルフ / ぱん",
     "result": "両生還",
-    "image": "/trpg-log/images/110.png"
+    "image": "/trpg-log/images/かいマホ継続",
+    "note": "110.png"
   },
   {
     "id": "109",
@@ -1986,7 +2152,8 @@
     "kpc": "卯月 唯一",
     "pc": "燕昇亭 征爾 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/109.png"
+    "image": "/trpg-log/images/ヤゼル継続",
+    "note": "109.png"
   },
   {
     "id": "108",
@@ -1999,7 +2166,8 @@
     "kpc": "",
     "pc": "宮藤 澄祢 / 🚽\n阿久津 津々楽 / 赤石",
     "result": "両生還",
-    "image": "/trpg-log/images/108.png"
+    "image": "",
+    "note": "108.png"
   },
   {
     "id": "107",
@@ -2012,7 +2180,8 @@
     "kpc": "",
     "pc": "鵤森 瑞希 / 日雀",
     "result": "？？？",
-    "image": "/trpg-log/images/107.png"
+    "image": "/trpg-log/images/キルキル継続",
+    "note": "107.png"
   },
   {
     "id": "106",
@@ -2025,7 +2194,8 @@
     "kpc": "鴈金 蒼",
     "pc": "十霞 附 / C-hicken",
     "result": "両生還",
-    "image": "/trpg-log/images/106.png"
+    "image": "/trpg-log/images/同居人継続",
+    "note": "106.png"
   },
   {
     "id": "105",
@@ -2038,7 +2208,8 @@
     "kpc": "",
     "pc": "柳葉 三毛 / 天丼男\r\n柴（電脳交機デカバスター） / ヲタリア食堂\r\n空閑 潚子 / 捲土重来\r\n椋（プサローニ-MV97） / バルト海洋葬",
     "result": "全生還",
-    "image": "/trpg-log/images/105.png"
+    "image": "",
+    "note": "105.png"
   },
   {
     "id": "104",
@@ -2051,7 +2222,8 @@
     "kpc": "十霞 附",
     "pc": "鴈金 蒼 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/104.png"
+    "image": "/trpg-log/images/同居人継続",
+    "note": "104.png"
   },
   {
     "id": "102",
@@ -2064,7 +2236,8 @@
     "kpc": "",
     "pc": "暴 動脈 / 天丼男\r\n琴珠 灯 / ヲタリア食堂\r\n脳島 しゆ / 捲土重来\r\n八重口 椿 / カストル",
     "result": "全生還",
-    "image": "/trpg-log/images/102.png"
+    "image": "",
+    "note": "102.png"
   },
   {
     "id": "103",
@@ -2077,7 +2250,8 @@
     "kpc": "白城",
     "pc": "瑞鶴 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/103.png"
+    "image": "/trpg-log/images/かいマホ継続",
+    "note": "103.png"
   },
   {
     "id": "033",
@@ -2090,7 +2264,8 @@
     "kpc": "",
     "pc": "興津 新 / 新高\n太平洋 宇一 / 海星\n鴲凪 真琴 / 日雀\n津々崎 秋鹿 / 葦原葦簀",
     "result": "全生還",
-    "image": "/trpg-log/images/033.png"
+    "image": "/trpg-log/images/庭師継続",
+    "note": "033.png"
   },
   {
     "id": "032",
@@ -2103,7 +2278,8 @@
     "kpc": "",
     "pc": "久保田 朝日 / 新高\n千里 怜那 / 海星\n鴬生 理緒 / 日雀\n黒河 貴船 / 葦原葦簀",
     "result": "3生還1ロスト",
-    "image": "/trpg-log/images/032.png"
+    "image": "",
+    "note": "032.png"
   },
   {
     "id": "100",
@@ -2116,7 +2292,8 @@
     "kpc": "",
     "pc": "荒木 凱世 / 捲土重来\n南雲 考祢 / バルト海洋葬",
     "result": "両生還",
-    "image": "/trpg-log/images/100.png"
+    "image": "",
+    "note": "100.png"
   },
   {
     "id": "101",
@@ -2129,7 +2306,8 @@
     "kpc": "",
     "pc": "庵野 穣 / トキハカ\n利嶋 犀助 / 入口さとる",
     "result": "両生還",
-    "image": "/trpg-log/images/101.png"
+    "image": "",
+    "note": "101.png"
   },
   {
     "id": "099",
@@ -2142,7 +2320,8 @@
     "kpc": "",
     "pc": "安藤 羊 / 天丼男\n朝陽 葉 / うましか\n宍戸・ガルシア・月能 / 捲土重来\n素速井 暫蔵 / ヲタリア食堂",
     "result": "全生還",
-    "image": "/trpg-log/images/099.png"
+    "image": "",
+    "note": "099.png"
   },
   {
     "id": "098",
@@ -2155,7 +2334,8 @@
     "kpc": "",
     "pc": "城戸 光男 / 九服\n加持 戻 / ohari;)",
     "result": "両生還",
-    "image": "/trpg-log/images/098.png"
+    "image": "",
+    "note": "098.png"
   },
   {
     "id": "097",
@@ -2168,7 +2348,8 @@
     "kpc": "",
     "pc": "一六 / 日雀\n佰星 / 新高",
     "result": "1生還1ロスト",
-    "image": "/trpg-log/images/097.png"
+    "image": "",
+    "note": "097.png"
   },
   {
     "id": "096",
@@ -2181,7 +2362,8 @@
     "kpc": "黒鵐山 奈津樹",
     "pc": "大稔 央 / sasi",
     "result": "両生還",
-    "image": "/trpg-log/images/096.png"
+    "image": "/trpg-log/images/灰よか継続",
+    "note": "096.png"
   },
   {
     "id": "095",
@@ -2194,7 +2376,8 @@
     "kpc": "",
     "pc": "ウルフ / ぱん\n瑞鶴 / 日雀\n白城 / 赤石\n天使 / クルマ",
     "result": "全生還",
-    "image": "/trpg-log/images/095.png"
+    "image": "",
+    "note": "095.png"
   },
   {
     "id": "094",
@@ -2207,7 +2390,8 @@
     "kpc": "",
     "pc": "三木 悟 / 24314\n黒南風 サツキ / たのCマン",
     "result": "両生還",
-    "image": "/trpg-log/images/094.png"
+    "image": "",
+    "note": "094.png"
   },
   {
     "id": "093",
@@ -2220,7 +2404,8 @@
     "kpc": "鵙谷 耀",
     "pc": "七誌 弘志 / 九服",
     "result": "両ロスト",
-    "image": "/trpg-log/images/093.png"
+    "image": "/trpg-log/images/我が死継続",
+    "note": "093.png"
   },
   {
     "id": "092",
@@ -2233,7 +2418,8 @@
     "kpc": "",
     "pc": "鵙谷 耀 / 日雀",
     "result": "生還",
-    "image": "/trpg-log/images/092.png"
+    "image": "/trpg-log/images/我が死継続",
+    "note": "092.png"
   },
   {
     "id": "090",
@@ -2246,7 +2432,8 @@
     "kpc": "大稔 央",
     "pc": "黒鵐山 奈津樹 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/090.png"
+    "image": "",
+    "note": "090.png"
   },
   {
     "id": "091",
@@ -2259,7 +2446,8 @@
     "kpc": "",
     "pc": "鵙谷 耀 / 日雀",
     "result": "生還",
-    "image": "/trpg-log/images/091.png"
+    "image": "/trpg-log/images/我が死継続",
+    "note": "091.png"
   },
   {
     "id": "089",
@@ -2272,7 +2460,8 @@
     "kpc": "",
     "pc": "鵙谷 耀 / 日雀\n宍戸 茉莉 / ohari;)",
     "result": "両生還",
-    "image": "/trpg-log/images/089.png"
+    "image": "/trpg-log/images/我が死継続",
+    "note": "089.png"
   },
   {
     "id": "088",
@@ -2285,7 +2474,8 @@
     "kpc": "燕昇亭 征爾",
     "pc": "卯月 唯一 / ohari;)",
     "result": "両生還",
-    "image": "/trpg-log/images/088.png"
+    "image": "/trpg-log/images/ヤゼル継続",
+    "note": "088.png"
   },
   {
     "id": "087",
@@ -2298,7 +2488,8 @@
     "kpc": "燕昇亭 征爾",
     "pc": "卯月 唯一 / ohari;)",
     "result": "両生還",
-    "image": "/trpg-log/images/087.png"
+    "image": "",
+    "note": "087.png"
   },
   {
     "id": "086",
@@ -2311,7 +2502,8 @@
     "kpc": "",
     "pc": "アマジキ / 花子\n大鳳 / 日雀\n過去屋 / 新村\nマツリ / 精肉組合",
     "result": "全生還",
-    "image": "/trpg-log/images/086.png"
+    "image": "",
+    "note": "086.png"
   },
   {
     "id": "030",
@@ -2324,7 +2516,8 @@
     "kpc": "イタル",
     "pc": "鹿島灘 冴和 / 海星",
     "result": "両生還",
-    "image": "/trpg-log/images/030.png"
+    "image": "/trpg-log/images/VOID継続",
+    "note": "030.png"
   },
   {
     "id": "031",
@@ -2337,7 +2530,8 @@
     "kpc": "鴲凪 真琴",
     "pc": "太平洋 宇一 / 海星",
     "result": "両生還",
-    "image": "/trpg-log/images/031.png"
+    "image": "/trpg-log/images/庭師継続",
+    "note": "031.png"
   },
   {
     "id": "085",
@@ -2350,7 +2544,8 @@
     "kpc": "",
     "pc": "鵤森 瑞希 / 日雀\n御厨 日向 / 蓮丸。",
     "result": "両生還",
-    "image": "/trpg-log/images/085.png"
+    "image": "",
+    "note": "085.png"
   },
   {
     "id": "084",
@@ -2363,7 +2558,8 @@
     "kpc": "",
     "pc": "加賀 九叶 / ぼくうち\n棗 文 / ヴェら",
     "result": "1生還1ロスト",
-    "image": "/trpg-log/images/084.png"
+    "image": "",
+    "note": "084.png"
   },
   {
     "id": "082",
@@ -2376,7 +2572,8 @@
     "kpc": "",
     "pc": "レイモンド・エルヴィス・ラヴデイ / 日雀\nニコラス・アルバーニ / かいの\nギルバート・マルティネス / K鮭\nアリス・アンブローズ / 精肉組合",
     "result": "2生還2ロスト",
-    "image": "/trpg-log/images/082.png"
+    "image": "",
+    "note": "082.png"
   },
   {
     "id": "083",
@@ -2389,7 +2586,8 @@
     "kpc": "",
     "pc": "ルーク・C・フォックス / うましか\n田中 達也 / 天丼",
     "result": "両生還",
-    "image": "/trpg-log/images/083.png"
+    "image": "",
+    "note": "083.png"
   },
   {
     "id": "081",
@@ -2402,7 +2600,8 @@
     "kpc": "",
     "pc": "加治 優雅 / K鮭\n徳永 美里 / かいの\n湯崎野 紫桜 / 精肉組合",
     "result": "全生還",
-    "image": "/trpg-log/images/081.png"
+    "image": "",
+    "note": "081.png"
   },
   {
     "id": "080",
@@ -2415,7 +2614,8 @@
     "kpc": "",
     "pc": "去来川 とき / 日雀\n武藤 烏有 / 九服",
     "result": "両生還",
-    "image": "/trpg-log/images/080.png"
+    "image": "",
+    "note": "080.png"
   },
   {
     "id": "079",
@@ -2428,7 +2628,8 @@
     "kpc": "",
     "pc": "小鳥遊 昴 / KINOKO\n山曌栗 薫 / とみおか",
     "result": "両生還",
-    "image": "/trpg-log/images/079.png"
+    "image": "",
+    "note": "079.png"
   },
   {
     "id": "078",
@@ -2441,7 +2642,8 @@
     "kpc": "",
     "pc": "アルフレッド＝アンディ / かるた\r\nオルヒデア・ガヴラス / カストル\r\nオピス・ローコッド / ヲタリア食堂\r\nヴラード＝レイドン / らんぺいん",
     "result": "3生還1ロスト",
-    "image": "/trpg-log/images/078.png"
+    "image": "",
+    "note": "078.png"
   },
   {
     "id": "017",
@@ -2454,7 +2656,8 @@
     "kpc": "",
     "pc": "マデリーン・R・バートレット / C-hicken\nナルコ・レム / うましか\nグリゼルダ・ファブリ / 天丼\nブライズ・コレット / 新高\nベルンハルト・ヴィルヘルム / 日雀\nピエール・スミス / 葦原葦簀",
     "result": "全生還",
-    "image": "/trpg-log/images/017.png"
+    "image": "",
+    "note": "017.png"
   },
   {
     "id": "029",
@@ -2467,7 +2670,8 @@
     "kpc": "",
     "pc": "興津 新 / 新高\n太平洋 宇一 / 海星\n鴲凪 真琴 / 日雀\n津々崎 秋鹿 / 葦原葦簀",
     "result": "全生還",
-    "image": "/trpg-log/images/029.png"
+    "image": "",
+    "note": "029.png"
   },
   {
     "id": "077",
@@ -2480,7 +2684,8 @@
     "kpc": "",
     "pc": "ディオン・ハリアトゥス / 日雀\nアーロン・パーカー / sasi\nオリヴィア・ウォトソン / 九服\nシリル・K・レストレンジ / ohari;)",
     "result": "全生還",
-    "image": "/trpg-log/images/077.png"
+    "image": "",
+    "note": "077.png"
   },
   {
     "id": "076",
@@ -2493,7 +2698,8 @@
     "kpc": "",
     "pc": "瀬黄 涼一郎 / 蓮丸。\n碧山 由 / 精肉組合",
     "result": "両ロスト",
-    "image": "/trpg-log/images/076.png"
+    "image": "",
+    "note": "076.png"
   },
   {
     "id": "028",
@@ -2506,7 +2712,8 @@
     "kpc": "",
     "pc": "Wellington White / 海星\n樽前 燕人 / 葦原葦簀\n十姉 阿賀妹 / 日雀",
     "result": "全生還",
-    "image": "/trpg-log/images/028.png"
+    "image": "",
+    "note": "028.png"
   },
   {
     "id": "075",
@@ -2519,7 +2726,8 @@
     "kpc": "鵙谷 耀",
     "pc": "七誌 弘志 / 九服\n宍戸 茉莉 / ohari;)",
     "result": "全生還",
-    "image": "/trpg-log/images/075.png"
+    "image": "/trpg-log/images/我が死継続",
+    "note": "075.png"
   },
   {
     "id": "027",
@@ -2532,7 +2740,8 @@
     "kpc": "",
     "pc": "鯨岡 和音 / K鮭\nイロハ / 赫満\n鹿島灘 冴和 / 海星\nイタル / 日雀",
     "result": "全生還",
-    "image": "/trpg-log/images/027.png"
+    "image": "",
+    "note": "027.png"
   },
   {
     "id": "074",
@@ -2545,7 +2754,8 @@
     "kpc": "",
     "pc": "鵙谷 耀 / 日雀\n七誌 弘志 / 九服",
     "result": "両生還",
-    "image": "/trpg-log/images/074.png"
+    "image": "/trpg-log/images/我が死継続",
+    "note": "074.png"
   },
   {
     "id": "073",
@@ -2558,7 +2768,8 @@
     "kpc": "紅蛾 翅",
     "pc": "鴻池 和 / 日雀",
     "result": "1生還1ロスト",
-    "image": "/trpg-log/images/073.png"
+    "image": "/trpg-log/images/かいいぬし継続",
+    "note": "073.png"
   },
   {
     "id": "072",
@@ -2571,7 +2782,8 @@
     "kpc": "",
     "pc": "鈴木田中佐藤 伊おリ / 九服\r\n多々良々 目々目  / ohari;)",
     "result": "両生還",
-    "image": "/trpg-log/images/072.png"
+    "image": "",
+    "note": "072.png"
   },
   {
     "id": "071",
@@ -2584,7 +2796,8 @@
     "kpc": "",
     "pc": "原境 / 葦原葦簀\r\n稲城都 / 新高",
     "result": "1生還1ロスト",
-    "image": "/trpg-log/images/071.png"
+    "image": "",
+    "note": "071.png"
   },
   {
     "id": "070",
@@ -2597,7 +2810,8 @@
     "kpc": "友成 富貴",
     "pc": "鶉橋 立 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/070.png"
+    "image": "/trpg-log/images/ステガノ継続",
+    "note": "070.png"
   },
   {
     "id": "068",
@@ -2610,7 +2824,8 @@
     "kpc": "ベティ・フランツィスカ・フェアルスト",
     "pc": "ザファー・ミトコフ / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/068.png"
+    "image": "/trpg-log/images/蹂躙継続",
+    "note": "068.png"
   },
   {
     "id": "067",
@@ -2623,7 +2838,8 @@
     "kpc": "鶉橋 立",
     "pc": "友成 富貴 / 葦原葦簀",
     "result": "両生還",
-    "image": "/trpg-log/images/067.png"
+    "image": "/trpg-log/images/ステガノ継続",
+    "note": "067.png"
   },
   {
     "id": "066",
@@ -2636,7 +2852,8 @@
     "kpc": "",
     "pc": "廿日鈴壬 / ふしみいよ\r\n鴫山萩斗/ 日雀\r\n比志下愛希帆 / 葦原葦簀\r\n塔戴天界人 / 精肉組合",
     "result": "全生還",
-    "image": "/trpg-log/images/066.png"
+    "image": "",
+    "note": "066.png"
   },
   {
     "id": "065",
@@ -2649,7 +2866,8 @@
     "kpc": "",
     "pc": "鵙谷 耀 / 日雀\n七誌 弘志 / 九服",
     "result": "両生還",
-    "image": "/trpg-log/images/065.png"
+    "image": "/trpg-log/images/我が死継続",
+    "note": "065.png"
   },
   {
     "id": "064",
@@ -2662,7 +2880,8 @@
     "kpc": "",
     "pc": "友成 富貴 / 葦原葦簀\n鶉橋 立 / 日雀",
     "result": "両生還",
-    "image": "/trpg-log/images/064.png"
+    "image": "",
+    "note": "064.png"
   },
   {
     "id": "063",
@@ -2675,7 +2894,8 @@
     "kpc": "園曽 白桜",
     "pc": "鴻池 和 / 日雀",
     "result": "1生還1ロスト",
-    "image": "/trpg-log/images/063.png"
+    "image": "",
+    "note": "063.png"
   },
   {
     "id": "069",
@@ -2688,7 +2908,8 @@
     "kpc": "鵙谷 耀",
     "pc": "七誌 弘志 / 九服\n宍戸 茉莉 / ohari;)",
     "result": "全生還",
-    "image": "/trpg-log/images/069.png"
+    "image": "/trpg-log/images/我が死継続",
+    "note": "069.png"
   },
   {
     "id": "062",
@@ -2701,7 +2922,8 @@
     "kpc": "",
     "pc": "入鳩間 崚 / 日雀\n春諧王助 / 捲土重来",
     "result": "両生還",
-    "image": "/trpg-log/images/062.png"
+    "image": "",
+    "note": "062.png"
   },
   {
     "id": "026",
@@ -2714,7 +2936,8 @@
     "kpc": "",
     "pc": "船瀬 日向 / 新高\n船瀬 蓮司 / 海星",
     "result": "全生還",
-    "image": "/trpg-log/images/026.png"
+    "image": "",
+    "note": "026.png"
   },
   {
     "id": "061",
@@ -2727,7 +2950,8 @@
     "kpc": "宍戸 茉莉",
     "pc": "鵙谷 耀 / 日雀\n七誌 弘志 / 九服",
     "result": "全生還",
-    "image": "/trpg-log/images/061.png"
+    "image": "",
+    "note": "061.png"
   },
   {
     "id": "060",
@@ -2740,7 +2964,8 @@
     "kpc": "",
     "pc": "眞銅藤邑 / 葦原葦簀\r\n門倉開 / うましかさん\r\n鍋上浄 / 捲土重来さん",
     "result": "2生還1ロスト",
-    "image": "/trpg-log/images/060.png"
+    "image": "",
+    "note": "060.png"
   },
   {
     "id": "015",
@@ -2753,7 +2978,8 @@
     "kpc": "",
     "pc": "ザファー・ミトコフ / 日雀",
     "result": "生還",
-    "image": "/trpg-log/images/015.png"
+    "image": "/trpg-log/images/蹂躙継続",
+    "note": "015.png"
   },
   {
     "id": "014",
@@ -2766,7 +2992,8 @@
     "kpc": "",
     "pc": "ザイン・ヘルシャフト / K鮭\nザファー・ミトコフ / 日雀\nピン・フーアン / かいの\nセシル・タレント / 精肉組合",
     "result": "全生還",
-    "image": "/trpg-log/images/014.png"
+    "image": "/trpg-log/images/蹂躙継続",
+    "note": "014.png"
   },
   {
     "id": "013",
@@ -2779,7 +3006,8 @@
     "kpc": "",
     "pc": "ザイン・ヘルシャフト / K鮭\nザファー・ミトコフ / 日雀\nピン・フーアン / かいの\nセシル・タレント / 精肉組合",
     "result": "全生還",
-    "image": "/trpg-log/images/013.png"
+    "image": "/trpg-log/images/蹂躙継続",
+    "note": "013.png"
   },
   {
     "id": "012",
@@ -2792,7 +3020,8 @@
     "kpc": "",
     "pc": "ザイン・ヘルシャフト / K鮭\nザファー・ミトコフ / 日雀\nピン・フーアン / かいの\nセシル・タレント / 精肉組合",
     "result": "全生還",
-    "image": "/trpg-log/images/012.png"
+    "image": "/trpg-log/images/蹂躙継続",
+    "note": "012.png"
   },
   {
     "id": "011",
@@ -2805,7 +3034,8 @@
     "kpc": "",
     "pc": "美麗 らむ / 葦原葦簀\nセドリック 向井 / 日雀\n小椋 彩波 / カストル",
     "result": "全生還",
-    "image": "/trpg-log/images/011.png"
+    "image": "",
+    "note": "011.png"
   },
   {
     "id": "010",
@@ -2818,7 +3048,8 @@
     "kpc": "",
     "pc": "初見 瞳矢 / 葦原葦簀\r\n毬藻田戸和 / 天丼\r\n常城 彩 / うましか\r\n鷹本 綾 / 新高",
     "result": "全生還",
-    "image": "/trpg-log/images/010.png"
+    "image": "",
+    "note": "010.png"
   },
   {
     "id": "009",
@@ -2831,7 +3062,8 @@
     "kpc": "",
     "pc": "鴈金 蒼 / 日雀\n十霞 附 / C-hicken",
     "result": "両生還",
-    "image": "/trpg-log/images/009.png"
+    "image": "",
+    "note": "009.png"
   },
   {
     "id": "008",
@@ -2844,7 +3076,8 @@
     "kpc": "",
     "pc": "表参道 / 天丼\n鈴木 健 / うましか\nシーザー / C-hicken\n江永 光秀 / 優斗",
     "result": "全生還",
-    "image": "/trpg-log/images/008.png"
+    "image": "",
+    "note": "008.png"
   },
   {
     "id": "007",
@@ -2857,7 +3090,8 @@
     "kpc": "",
     "pc": "鹿耳 透 / うましか",
     "result": "生還",
-    "image": "/trpg-log/images/007.png"
+    "image": "",
+    "note": "007.png"
   },
   {
     "id": "006",
@@ -2870,7 +3104,8 @@
     "kpc": "",
     "pc": "ザイン・ヘルシャフト / K鮭\nザファー・ミトコフ / 日雀\nピン・フーアン / かいの\nセシル・タレント / 精肉組合",
     "result": "全生還",
-    "image": "/trpg-log/images/006.png"
+    "image": "/trpg-log/images/蹂躙継続",
+    "note": "006.png"
   },
   {
     "id": "005",
@@ -2883,7 +3118,8 @@
     "kpc": "",
     "pc": "盗人 竹嶽氏 / 天丼\n鹿耳 透 / うましか\n賽下 健吾 / 優斗",
     "result": "全生還",
-    "image": "/trpg-log/images/005.png"
+    "image": "",
+    "note": "005.png"
   },
   {
     "id": "004",
@@ -2896,7 +3132,8 @@
     "kpc": "沢渡 ユカコ",
     "pc": "鴉東 芽 / 日雀",
     "result": "ロスト",
-    "image": "/trpg-log/images/004.png"
+    "image": "",
+    "note": "004.png"
   },
   {
     "id": "003",
@@ -2909,7 +3146,8 @@
     "kpc": "",
     "pc": "ザイン・ヘルシャフト / K鮭\nザファー・ミトコフ / 日雀\nピン・フーアン / かいの\nセシル・タレント / 精肉組合",
     "result": "全生還",
-    "image": "/trpg-log/images/003.png"
+    "image": "/trpg-log/images/蹂躙継続",
+    "note": "003.png"
   },
   {
     "id": "002",
@@ -2922,7 +3160,8 @@
     "kpc": "",
     "pc": "ザファー・ミトコフ / 日雀\nピン・フーアン / かいの\nセシル・タレント / 精肉組合",
     "result": "全生還",
-    "image": "/trpg-log/images/002.png"
+    "image": "/trpg-log/images/蹂躙継続",
+    "note": "002.png"
   },
   {
     "id": "001",
@@ -2935,6 +3174,7 @@
     "kpc": "",
     "pc": "ザイン・ヘルシャフト / K鮭\nザファー・ミトコフ / 日雀\nピン・フーアン / かいの\nセシル・タレント / 精肉組合",
     "result": "全生還",
-    "image": "/trpg-log/images/001.png"
+    "image": "",
+    "note": "001.png"
   }
 ]
