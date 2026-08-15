@@ -42,97 +42,105 @@ const sortedSessions = [...sessions].sort(
 
 				<p class="description">
 					TRPGで遊んだ卓の記録をまとめています。
+					僭越ながら敬称略で記載させていただきます。
 				</p>
 
 			</header>
 
 
 			<!-- =========================
-			     PL / KP フィルター
+			     検索・絞り込み
 			========================= -->
 
-			<div class="filters">
+			<section class="archive-tools" aria-label="卓報告の検索と絞り込み">
 
-				<button
-					class="filter-button is-active"
-					type="button"
-					data-filter="ALL"
-				>
-					ALL
-				</button>
+				<div class="search-row">
+					<label class="search-box">
+						<span class="visually-hidden">卓報告を検索</span>
+						<input
+							id="session-search"
+							type="search"
+							placeholder="シナリオ名・作者・参加者などを検索"
+							autocomplete="off"
+						/>
+					</label>
 
-				<button
-					class="filter-button"
-					type="button"
-					data-filter="PL"
-				>
-					PL
-				</button>
+					<label class="year-select-wrap">
+						<span class="year-label">YEAR</span>
+						<select id="year-filter" aria-label="年で絞り込む">
+							<option value="ALL">ALL YEARS</option>
+						</select>
+					</label>
+				</div>
 
-				<button
-					class="filter-button"
-					type="button"
-					data-filter="KP"
-				>
-					KP
-				</button>
+				<div class="filter-row">
+					<div class="filters" aria-label="参加区分で絞り込む">
+						<button
+							class="filter-button is-active"
+							type="button"
+							data-filter="ALL"
+						>
+							ALL
+						</button>
 
-			</div>
+						<button
+							class="filter-button"
+							type="button"
+							data-filter="PL"
+						>
+							PL
+						</button>
+
+						<button
+							class="filter-button"
+							type="button"
+							data-filter="KP"
+						>
+							KP
+						</button>
+
+						<button
+							class="filter-button"
+							type="button"
+							data-filter="KPC"
+						>
+							KPC
+						</button>
+					</div>
+
+					<p class="result-count" id="result-count" aria-live="polite"></p>
+				</div>
+
+			</section>
 
 
 			<!-- =========================
 			     卓一覧
 			========================= -->
 
-			<section class="session-grid">
+			<section
+				class="session-grid"
+				id="session-grid"
+				aria-live="polite"
+			></section>
 
-				{
-					sortedSessions.map((session) => (
+			<p class="empty-message" id="empty-message" hidden>
+				条件に一致する卓報告がありません。
+			</p>
 
-						<button
-							class="session-card"
-							type="button"
-							data-session={JSON.stringify(session)}
-							data-category={session.category}
-						>
-
-							<div class="image-wrap">
-
-								<img
-									src={session.image}
-									alt={`${session.title}の卓報告`}
-									class="session-image"
-									draggable="false"
-									oncontextmenu="return false;"
-								/>
-
-							</div>
+			<nav
+				class="pagination"
+				id="pagination"
+				aria-label="ページ切り替え"
+			></nav>
 
 
-							<div class="session-info">
-
-								<h2>
-									{session.title}
-								</h2>
-
-								<time datetime={session.date}>
-									{
-										new Date(
-											session.date
-										).toLocaleDateString(
-											"ja-JP"
-										)
-									}
-								</time>
-
-							</div>
-
-						</button>
-
-					))
-				}
-
-			</section>
+			<!-- JavaScriptで一覧を生成するための元データ -->
+			<script
+				id="sessions-data"
+				type="application/json"
+				set:html={JSON.stringify(sortedSessions)}
+			></script>
 
 		</main>
 
@@ -241,6 +249,46 @@ const sortedSessions = [...sessions].sort(
 		========================= -->
 
 		<script>
+			/* =========================
+			   基本設定
+			========================= */
+
+			const ITEMS_PER_PAGE = 30;
+
+			const dataElement =
+				document.querySelector("#sessions-data");
+
+			const allSessions =
+				dataElement
+					? JSON.parse(dataElement.textContent || "[]")
+					: [];
+
+			const sessionGrid =
+				document.querySelector("#session-grid");
+
+			const searchInput =
+				document.querySelector("#session-search");
+
+			const yearFilter =
+				document.querySelector("#year-filter");
+
+			const filterButtons =
+				document.querySelectorAll(".filter-button");
+
+			const resultCount =
+				document.querySelector("#result-count");
+
+			const pagination =
+				document.querySelector("#pagination");
+
+			const emptyMessage =
+				document.querySelector("#empty-message");
+
+
+			/* =========================
+			   モーダル
+			========================= */
+
 			const modal =
 				document.querySelector("#session-modal");
 
@@ -270,111 +318,422 @@ const sortedSessions = [...sessions].sort(
 
 
 			/* =========================
+			   現在の絞り込み状態
+			========================= */
+
+			let activeCategory = "ALL";
+			let activeYear = "ALL";
+			let searchQuery = "";
+			let currentPage = 1;
+
+
+			/* =========================
+			   年プルダウン生成
+			========================= */
+
+			const years =
+				[
+					...new Set(
+						allSessions
+							.map((session) =>
+								String(session.date || "").slice(0, 4)
+							)
+							.filter(Boolean)
+					)
+				].sort((a, b) => Number(b) - Number(a));
+
+			years.forEach((year) => {
+				const option =
+					document.createElement("option");
+
+				option.value = year;
+				option.textContent = `${year}年`;
+
+				yearFilter.appendChild(option);
+			});
+
+
+			/* =========================
+			   検索対象文字列
+			========================= */
+
+			function makeSearchText(session) {
+				return [
+					session.title,
+					session.system,
+					session.writer,
+					session.kp,
+					session.kpc,
+					session.pc,
+					session.result
+				]
+					.filter(Boolean)
+					.join(" ")
+					.toLocaleLowerCase("ja");
+			}
+
+
+			/* =========================
+			   絞り込み
+			========================= */
+
+			function getFilteredSessions() {
+
+				return allSessions.filter((session) => {
+
+					const category =
+						String(session.category || "")
+							.trim()
+							.toUpperCase();
+
+					const year =
+						String(session.date || "")
+							.slice(0, 4);
+
+					const categoryMatches =
+						activeCategory === "ALL" ||
+						category === activeCategory;
+
+					const yearMatches =
+						activeYear === "ALL" ||
+						year === activeYear;
+
+					const searchMatches =
+						!searchQuery ||
+						makeSearchText(session).includes(
+							searchQuery
+						);
+
+					return (
+						categoryMatches &&
+						yearMatches &&
+						searchMatches
+					);
+				});
+			}
+
+
+			/* =========================
+			   卓カード生成
+			========================= */
+
+			function createSessionCard(session) {
+
+				const card =
+					document.createElement("button");
+
+				card.className = "session-card";
+				card.type = "button";
+
+				card.setAttribute(
+					"aria-label",
+					`${session.title}の詳細を見る`
+				);
+
+
+				const imageWrap =
+					document.createElement("div");
+
+				imageWrap.className = "image-wrap";
+
+
+				const image =
+					document.createElement("img");
+
+				image.src = session.image || "";
+				image.alt = `${session.title}の卓報告`;
+				image.className = "session-image";
+				image.draggable = false;
+				image.loading = "lazy";
+				image.decoding = "async";
+
+
+				imageWrap.appendChild(image);
+
+
+				const info =
+					document.createElement("div");
+
+				info.className = "session-info";
+
+
+				const title =
+					document.createElement("h2");
+
+				title.textContent =
+					session.title || "無題";
+
+
+				const time =
+					document.createElement("time");
+
+				time.dateTime =
+					session.date || "";
+
+				time.textContent =
+					session.date
+						? new Date(
+							session.date
+						).toLocaleDateString(
+							"ja-JP"
+						)
+						: "—";
+
+
+				info.appendChild(title);
+				info.appendChild(time);
+
+				card.appendChild(imageWrap);
+				card.appendChild(info);
+
+
+				card.addEventListener(
+					"click",
+					() => openModal(session)
+				);
+
+				return card;
+			}
+
+
+			/* =========================
+			   一覧描画
+			========================= */
+
+			function renderSessions() {
+
+				const filtered =
+					getFilteredSessions();
+
+				const totalCount =
+					filtered.length;
+
+				const totalPages =
+					Math.max(
+						1,
+						Math.ceil(
+							totalCount /
+							ITEMS_PER_PAGE
+						)
+					);
+
+				if (currentPage > totalPages) {
+					currentPage = totalPages;
+				}
+
+				const startIndex =
+					(currentPage - 1) *
+					ITEMS_PER_PAGE;
+
+				const pageSessions =
+					filtered.slice(
+						startIndex,
+						startIndex +
+						ITEMS_PER_PAGE
+					);
+
+
+				sessionGrid.replaceChildren();
+
+				pageSessions.forEach((session) => {
+					sessionGrid.appendChild(
+						createSessionCard(session)
+					);
+				});
+
+
+				emptyMessage.hidden =
+					totalCount !== 0;
+
+
+				const visibleCount =
+					pageSessions.length;
+
+				if (totalCount === 0) {
+					resultCount.textContent =
+						"0件";
+				} else {
+					resultCount.textContent =
+						`${visibleCount}件表示 / 該当 ${totalCount}件`;
+				}
+
+
+				renderPagination(
+					totalPages,
+					totalCount
+				);
+			}
+
+
+			/* =========================
+			   ページ切り替え
+			========================= */
+
+			function renderPagination(
+				totalPages,
+				totalCount
+			) {
+
+				pagination.replaceChildren();
+
+				if (
+					totalCount === 0 ||
+					totalPages <= 1
+				) {
+					pagination.hidden = true;
+					return;
+				}
+
+				pagination.hidden = false;
+
+
+				const previous =
+					document.createElement("button");
+
+				previous.type = "button";
+				previous.className =
+					"page-button page-prev";
+
+				previous.textContent = "← PREV";
+				previous.disabled =
+					currentPage === 1;
+
+				previous.addEventListener(
+					"click",
+					() => {
+						currentPage -= 1;
+						renderSessions();
+						scrollToArchiveTop();
+					}
+				);
+
+
+				const pageInfo =
+					document.createElement("span");
+
+				pageInfo.className = "page-info";
+				pageInfo.textContent =
+					`${currentPage} / ${totalPages}`;
+
+
+				const next =
+					document.createElement("button");
+
+				next.type = "button";
+				next.className =
+					"page-button page-next";
+
+				next.textContent = "NEXT →";
+				next.disabled =
+					currentPage === totalPages;
+
+				next.addEventListener(
+					"click",
+					() => {
+						currentPage += 1;
+						renderSessions();
+						scrollToArchiveTop();
+					}
+				);
+
+
+				pagination.appendChild(previous);
+				pagination.appendChild(pageInfo);
+				pagination.appendChild(next);
+			}
+
+
+			function scrollToArchiveTop() {
+
+				const tools =
+					document.querySelector(
+						".archive-tools"
+					);
+
+				if (!tools) return;
+
+				const top =
+					tools.getBoundingClientRect().top +
+					window.scrollY -
+					20;
+
+				window.scrollTo({
+					top,
+					behavior: "smooth"
+				});
+			}
+
+
+			/* =========================
 			   モーダルを開く
 			========================= */
 
-			document
-				.querySelectorAll(".session-card")
-				.forEach((card) => {
+			function openModal(session) {
 
-					card.addEventListener(
-						"click",
-						() => {
+				modalImage.src =
+					session.image || "";
 
-							const session =
-								JSON.parse(
-									card.dataset.session
-								);
+				modalImage.alt =
+					`${session.title}の卓報告`;
 
+				modalTitle.textContent =
+					session.title || "—";
 
-							/* 画像 */
+				modalDate.textContent =
+					session.date
+						? new Date(
+							session.date
+						).toLocaleDateString(
+							"ja-JP"
+						)
+						: "—";
 
-							modalImage.src =
-								session.image;
+				modalSystem.textContent =
+					session.system || "—";
 
-							modalImage.alt =
-								`${session.title}の卓報告`;
-
-
-							/* タイトル */
-
-							modalTitle.textContent =
-								session.title;
+				modalWriter.textContent =
+					session.writer || "—";
 
 
-							/* 日付 */
+				const kpKpcLines = [];
 
-							modalDate.textContent =
-								new Date(
-									session.date
-								).toLocaleDateString(
-									"ja-JP"
-								);
-
-
-							/* System */
-
-							modalSystem.textContent =
-								session.system || "—";
-
-
-							/* Writer */
-
-							modalWriter.textContent =
-								session.writer || "—";
-
-
-							/* KP / KPC */
-
-							const kpKpcLines = [];
-
-							if (session.kp) {
-								kpKpcLines.push(
-									`KP：${session.kp}`
-								);
-							}
-
-							if (session.kpc) {
-								kpKpcLines.push(
-									`KPC：${session.kpc}`
-								);
-							}
-
-							modalKpKpc.textContent =
-								kpKpcLines.length > 0
-									? kpKpcLines.join("\n")
-									: "—";
-
-
-							/* PC / PL */
-
-							modalPc.textContent =
-								session.pc || "—";
-
-
-							/* Result */
-
-							modalResult.textContent =
-								session.result || "—";
-
-
-							/* モーダル表示 */
-
-							modal.classList.add(
-								"is-open"
-							);
-
-							modal.setAttribute(
-								"aria-hidden",
-								"false"
-							);
-
-							document.body.style.overflow =
-								"hidden";
-						}
+				if (session.kp) {
+					kpKpcLines.push(
+						`KP：${session.kp}`
 					);
+				}
 
-				});
+				if (session.kpc) {
+					kpKpcLines.push(
+						`KPC：${session.kpc}`
+					);
+				}
+
+				modalKpKpc.textContent =
+					kpKpcLines.length > 0
+						? kpKpcLines.join("\n")
+						: "—";
+
+
+				modalPc.textContent =
+					session.pc || "—";
+
+				modalResult.textContent =
+					session.result || "—";
+
+
+				modal.classList.add(
+					"is-open"
+				);
+
+				modal.setAttribute(
+					"aria-hidden",
+					"false"
+				);
+
+				document.body.style.overflow =
+					"hidden";
+			}
 
 
 			/* =========================
@@ -402,21 +761,16 @@ const sortedSessions = [...sessions].sort(
 					"[data-close-modal]"
 				)
 				.forEach((button) => {
-
 					button.addEventListener(
 						"click",
 						closeModal
 					);
-
 				});
 
-
-			/* Escキーでも閉じる */
 
 			document.addEventListener(
 				"keydown",
 				(event) => {
-
 					if (
 						event.key === "Escape" &&
 						modal.classList.contains(
@@ -425,48 +779,39 @@ const sortedSessions = [...sessions].sort(
 					) {
 						closeModal();
 					}
-
 				}
 			);
 
 
-			/* =========================
-			   卓画像の右クリックを無効化
-			========================= */
+			/* 卓画像の右クリックを無効化 */
 
 			document.addEventListener(
 				"contextmenu",
 				(event) => {
 
+					const target =
+						event.target;
+
 					if (
-						event.target.classList.contains(
-							"session-image"
-						) ||
-						event.target.classList.contains(
-							"modal-image"
+						target instanceof HTMLElement &&
+						(
+							target.classList.contains(
+								"session-image"
+							) ||
+							target.classList.contains(
+								"modal-image"
+							)
 						)
 					) {
 						event.preventDefault();
 					}
-
 				}
 			);
 
 
 			/* =========================
-			   PL / KP フィルター
+			   絞り込みイベント
 			========================= */
-
-			const filterButtons =
-				document.querySelectorAll(
-					".filter-button"
-				);
-
-			const sessionCards =
-				document.querySelectorAll(
-					".session-card"
-				);
-
 
 			filterButtons.forEach((button) => {
 
@@ -474,19 +819,17 @@ const sortedSessions = [...sessions].sort(
 					"click",
 					() => {
 
-						const filter =
-							button.dataset.filter;
+						activeCategory =
+							button.dataset.filter ||
+							"ALL";
 
-
-						/* 選択中のボタンを切り替え */
+						currentPage = 1;
 
 						filterButtons.forEach(
 							(item) => {
-
 								item.classList.remove(
 									"is-active"
 								);
-
 							}
 						);
 
@@ -494,31 +837,47 @@ const sortedSessions = [...sessions].sort(
 							"is-active"
 						);
 
-
-						/* 卓カードを絞り込み */
-
-						sessionCards.forEach(
-							(card) => {
-
-								const category =
-									card.dataset.category;
-
-								if (
-									filter === "ALL" ||
-									category === filter
-								) {
-									card.hidden = false;
-								} else {
-									card.hidden = true;
-								}
-
-							}
-						);
-
+						renderSessions();
 					}
 				);
-
 			});
+
+
+			yearFilter.addEventListener(
+				"change",
+				() => {
+
+					activeYear =
+						yearFilter.value;
+
+					currentPage = 1;
+
+					renderSessions();
+				}
+			);
+
+
+			searchInput.addEventListener(
+				"input",
+				() => {
+
+					searchQuery =
+						searchInput.value
+							.trim()
+							.toLocaleLowerCase("ja");
+
+					currentPage = 1;
+
+					renderSessions();
+				}
+			);
+
+
+			/* =========================
+			   初期表示
+			========================= */
+
+			renderSessions();
 
 		</script>
 
@@ -625,46 +984,115 @@ const sortedSessions = [...sessions].sort(
 
 
 	/* =========================
-	   フィルター
+	   検索・絞り込み
 	========================= */
 
-	.filters {
-		display: flex;
-		gap: 8px;
-
+	.archive-tools {
 		margin-bottom: 32px;
 	}
 
+	.search-row {
+		display: grid;
+		grid-template-columns:
+			minmax(0, 1fr)
+			180px;
+		gap: 10px;
+		margin-bottom: 14px;
+	}
+
+	.search-box {
+		display: block;
+	}
+
+	.search-box input,
+	.year-select-wrap select {
+		width: 100%;
+		height: 42px;
+		border: 1px solid #45474d;
+		border-radius: 0;
+		background: transparent;
+		color: #eeeeee;
+		font: inherit;
+		font-size: 13px;
+	}
+
+	.search-box input {
+		padding: 0 14px;
+	}
+
+	.search-box input::placeholder {
+		color: #777b82;
+	}
+
+	.search-box input:focus,
+	.year-select-wrap select:focus {
+		outline:
+			1px solid
+			#92969e;
+		outline-offset: -1px;
+	}
+
+	.year-select-wrap {
+		position: relative;
+		display: block;
+	}
+
+	.year-label {
+		position: absolute;
+		z-index: 1;
+		top: -7px;
+		left: 10px;
+		padding: 0 5px;
+		background: #1f2023;
+		color: #777b82;
+		font-size: 9px;
+		font-weight: 700;
+		letter-spacing: 0.12em;
+		pointer-events: none;
+	}
+
+	.year-select-wrap select {
+		padding: 0 34px 0 12px;
+		cursor: pointer;
+		color-scheme: dark;
+	}
+
+	.filter-row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 16px;
+	}
+
+	.filters {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		margin: 0;
+	}
 
 	.filter-button {
-		padding: 8px 18px;
-
+		min-width: 62px;
+		padding: 8px 16px;
 		border:
 			1px solid
 			#45474d;
-
 		background: transparent;
-
 		color: #92969e;
-
 		font-size: 12px;
 		font-weight: 700;
 		letter-spacing: 0.08em;
-
 		cursor: pointer;
-
 		transition:
 			background-color 0.2s ease,
 			color 0.2s ease,
 			border-color 0.2s ease;
 	}
 
-
 	.filter-button:hover {
 		border-color: #747880;
 		color: #eeeeee;
 	}
-
 
 	.filter-button.is-active {
 		border-color: #eeeeee;
@@ -672,9 +1100,75 @@ const sortedSessions = [...sessions].sort(
 		color: #1f2023;
 	}
 
+	.result-count {
+		flex: 0 0 auto;
+		margin: 0;
+		color: #7f838a;
+		font-size: 11px;
+		letter-spacing: 0.04em;
+	}
 
-	.session-card[hidden] {
+	.visually-hidden {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border: 0;
+	}
+
+	.empty-message {
+		margin: 64px 0;
+		color: #888c93;
+		font-size: 14px;
+		text-align: center;
+	}
+
+
+	/* =========================
+	   ページ切り替え
+	========================= */
+
+	.pagination {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 22px;
+		margin-top: 64px;
+	}
+
+	.pagination[hidden] {
 		display: none;
+	}
+
+	.page-button {
+		padding: 9px 14px;
+		border: 1px solid #45474d;
+		background: transparent;
+		color: #eeeeee;
+		font-size: 11px;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		cursor: pointer;
+	}
+
+	.page-button:hover:not(:disabled) {
+		border-color: #eeeeee;
+	}
+
+	.page-button:disabled {
+		opacity: 0.28;
+		cursor: default;
+	}
+
+	.page-info {
+		min-width: 70px;
+		color: #888c93;
+		font-size: 12px;
+		text-align: center;
 	}
 
 
@@ -1165,6 +1659,40 @@ const sortedSessions = [...sessions].sort(
 			margin-right: 0;
 
 			font-size: 21px;
+		}
+
+
+		/* 検索・絞り込み */
+
+		.search-row {
+			grid-template-columns: 1fr;
+			gap: 12px;
+		}
+
+		.filter-row {
+			align-items: flex-start;
+			flex-direction: column;
+			gap: 12px;
+		}
+
+		.filters {
+			width: 100%;
+			gap: 6px;
+		}
+
+		.filter-button {
+			flex: 1 1 0;
+			min-width: 0;
+			padding: 10px 8px;
+		}
+
+		.result-count {
+			align-self: flex-end;
+		}
+
+		.pagination {
+			gap: 12px;
+			margin-top: 48px;
 		}
 
 	}
