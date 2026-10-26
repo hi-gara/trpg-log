@@ -1,4 +1,18 @@
 [
+    {
+    "id": "229",
+    "title": "ムーンエラーアウトサイダー",
+    "date": "2026-09-29",
+    "category": "KP",
+    "system": "Call of Cthulhu",
+    "writer": "myao",
+    "kp": "日雀",
+    "kpc": "",
+    "pc": "近藤 碧 / R74\n暁 もなど / 羊飼いP\n烏野 濡羽 / 花難破納\nTorigata-8000 / なべす",
+    "result": "全生還",
+    "image": "/trpg-log/images/229.png",
+    "note": ""
+  },
   {
     "id": "228",
     "title": "ムーンエラーアウトサイダー",
@@ -9,7 +23,7 @@
     "kp": "生ハム",
     "kpc": "",
     "pc": "倉門 望都 / 葦原葦簀\n花之木 久守 / 新高\n高村 ヒカル / 海星\n赤弡 翡翠 / 日雀",
-    "result": "",
+    "result": "全生還",
     "image": "/trpg-log/images/228.png",
     "note": ""
   },
